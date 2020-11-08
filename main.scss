@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  @font-face {
+    font-family:'Roboto';
+    src: url('./Roboto/Roboto-Medium.ttf');
+   
+}
+
+
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'Roboto';
+} 
+
+  
+    /* début de l'entête */
+    header{
+        margin-top: 2.90vw;
+        display: flex;
+        justify-content:center;
+        margin-bottom:2.75vw ;
+        
+        .logo{
+            width: 40vw;
+            height: 7vw;
+        }
+    }
+    /* fin de l'entête*/
+
+    /*début de la partie explorer avec la boite de recherche 
+    les titres et le bouton "explorer nos restaurants*/
+    .explorer{
+        height: 89.90vw;
+        background-color:#F2F2F2;
+        text-align: center;
+    } 
+    /* boite de recherche */
+    .recherche{
+        height: 13.63vw;
+        background-color: #eaeaea;
+        background: linear-gradient(to top,#eaeaea,95%,#cfcfcf);
+        margin-bottom: 10.09vw;
+
+/*icon de position*/ 
+        .fa-map-marker-alt {
+            color: black;
+            margin-left: 0vw;
+            width: 10vw;
+            line-height: 10vw;
+            font-size: 4.5vw;
+        }
+/* saisie de recherche */
+            input{
+                width: 35vw;
+                line-height: 12.59vw;
+                font-size: 4vw;
+                font-weight:bold;
+                background-color:#eaeaea;
+                background: linear-gradient(to top,#eaeaea,95%,#cfcfcf);
+                border: solid 0vw;
+            }
+    }
+    /*fin de partie recherche*/
+
+    /* partie consacrée aux titres et sous titres*/     
+    .titre{
+        
+        width:65vw;
+        margin: auto;
+        font-size: 6.45vw;
+        font-weight:bold;
+        text-shadow:0.25vw 0.25vw 0.25vw #7d7d7d;
+        margin-bottom: 3vw;
+    }
+
+    .sousTitre{
+        width:90vw;
+        font-size: 4.75vw;
+        font-weight:normal;
+        text-shadow:unset;
+        color: #7d7d7d;
+        margin-bottom:8.09vw; 
+       
+    }
+    /*fin des titres*/
+
+    /* Bouton principal d'exploration et de commande*/
+    .btn-nav{
+        border: none;
+        margin: auto;
+        width: 57.79vw;
+        line-height:13.30vw;
+        font-size: 4.25vw;
+        box-shadow:0.5vw 0.5vw 1.25vw #7d7d7d;
+        background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+        /*transition:0.7s ease-in-out;*/
+        transition: transform 1000ms ease-in-out, opacity 700ms; 
+        border-radius: 10vw;
+        
+    }                  
+        .btn-link{
+            text-decoration: none;
+            color: white;
+        }   
+            
+        .btn-nav:hover{
+           /* width: 58.29vw; 
+            line-height:13.80vw; 
+            font-size:4.30vw;   
+            box-shadow:1.75vw 1.75vw 2vw #7d7d7d;*/
+            background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+            opacity: 0.7;
+           
+            transform: scale(1.2);
+            box-shadow:0.95vw 0.95vw 1.95vw #3d3d3d;
+          
+        }
+        
+     
+    /*fin du bonton .btn-nav*/
+    
+    /* début de la partie fonctionnenment*/
+    .fonctionnement{
+        width: 91.03vw;
+        height: 104.738vw;
+        margin: auto;
+        
+       
+
+        h2{
+            margin-top: 12.75vw;
+            font-size: 6.45vw;
+            margin-bottom:6.27vw;
+        }
+    } 
+
+        .box{
+          
+            display: flex;
+            flex-direction: column;
+            
+        }
+            .btn {
+                display: flex;
+                flex-direction: row;
+                border: none;
+                margin-left: auto;
+                margin-right: auto;
+                width: 83.91vw;
+                height: 19.73vw;
+                align-items: center;
+               
+                padding-left: 8.68vw; 
+                margin-bottom: 6.27vw;
+                font-size: 4.25vw;
+                box-shadow:0.5vw 0.5vw 1.25vw #7d7d7d;
+                background-color: #F2F2F2;
+                /*background: lightcoral;*/
+                transition:0.7s ease-in-out 0.07s;
+                border-radius: 7vw;
+                .btn-link{
+                    color: black;
+                    font-weight: 500;
+                }
+                
+                i{
+                    padding-right: 6.27vw;
+                    color: grey;
+                  }
+            }    
+    
+            
+    main{
+        width:100%;
+        height: 323.72vw;
+        background:#F2F2F2;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16vw;
+        
+           
+        h2{
+            padding-top: 11.86vw;
+           
+            width: 88.98vw;
+            font-size: 6.5vw;
+            margin: auto;
+        }
+        
+    }
+
+    .item{
+        width:88.98vw;
+        height:66.94vw;
+        overflow: hidden;
+        border: 0.5vw solid white;
+        background: white;
+        border-radius: 5vw;
+        margin: auto;
+
+        img{
+            border-top-left-radius: 5vw;
+            border-top-right-radius: 5vw;
+            width:100%;
+            height:61.61vw ;
+            object-fit:cover;
+            transform: translate(0%,-15vw);
+          
+           
+        }
+        .caption{
+            width: 100.1%;
+            height:20.33vw;
+            color: black;
+            background: white;
+            transform: translate(0%,-15vw);
+            border-bottom-left-radius: 5vw;
+            border-bottom-right-radius: 5vw;
+            padding-top: 3.25vw;
+            padding-left: 3.25vw;
+        h4{
+            font-size: 5vw;
+        }   
+        p{
+            padding-top: 1vw;
+            font-size: 4.5vw;
+        }
+    
+        } 
+
+    }
+  
+    footer{
+        width: 100vw;
+        height: 51.69vw;
+        
+        color: white;
+        background: rgb(34, 32, 32);
+        
+        
+        
+        h3{
+            padding-top: 5vw;
+            width: 90vw;
+            margin: auto;
+            font-size: 5vw;
+            padding-bottom: 5vw;
+        }
+
+        ul{
+            font-size: 4.5vw;
+            width: 90vw;
+            margin: auto;
+        }
+
+        li{
+            list-style-type: none;
+            padding-bottom: 2vw;
+        }
+    }
+             
+           
+    
+    
+
+
+
+
+    
+
+
+   
+
+
+
+     
+    
