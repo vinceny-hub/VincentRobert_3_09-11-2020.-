@@ -5,17 +5,41 @@
     
   }
 
+  @font-face{
+    font-family:'Shrikhand';
+    src: url('./Shrikhand/Shrikhand-Regular.ttf');
+    
+      
+  }
+
   @font-face {
     font-family:'Roboto';
     src: url('./Roboto/Roboto-Medium.ttf');
    
 }
 
+$mainBckColor:#F2F2F2;
+$searchBckColor:#eaeaea;
+$searchGrdBckColor:linear-gradient(to top,#eaeaea,95%,#cfcfcf);
+$textShadowTitre:#7d7d7d;
+$colorTextSousTitre:#7d7d7d;
+$boxShadowNavBtn:#7d7d7d;
+$colorIconPos:black;
+$btnGrdBckColor:linear-gradient(to bottom right,#FF79DA,#9356DC);
+$BtnLinkNav: white;
+$boxShadowBtnNavHover:#3d3d3d;
+$iconBtnLink:grey;
+$itemBorder:white;
+$itemBck:white;
+$captionColor:Black;
+$footerBck: rgb(34, 32, 32);
+$footerColor:white;
+
 
 body{
     width: 100%;
     margin: auto;
-    font-family: 'Roboto';
+    font-family:'Roboto';
 } 
 
   
@@ -37,19 +61,19 @@ body{
     les titres et le bouton "explorer nos restaurants*/
     .explorer{
         height: 89.90vw;
-        background-color:#F2F2F2;
+        background-color:$mainBckColor;
         text-align: center;
     } 
     /* boite de recherche */
     .recherche{
         height: 13.63vw;
-        background-color: #eaeaea;
-        background: linear-gradient(to top,#eaeaea,95%,#cfcfcf);
+        background-color:$searchBckColor;
+        background: $searchGrdBckColor;
         margin-bottom: 10.09vw;
 
 /*icon de position*/ 
         .fa-map-marker-alt {
-            color: black;
+            color:$colorIconPos;
             margin-left: 0vw;
             width: 10vw;
             line-height: 10vw;
@@ -61,8 +85,8 @@ body{
                 line-height: 12.59vw;
                 font-size: 4vw;
                 font-weight:bold;
-                background-color:#eaeaea;
-                background: linear-gradient(to top,#eaeaea,95%,#cfcfcf);
+                background-color:$searchBckColor;
+                background:$searchGrdBckColor;
                 border: solid 0vw;
             }
     }
@@ -75,7 +99,7 @@ body{
         margin: auto;
         font-size: 6.45vw;
         font-weight:bold;
-        text-shadow:0.25vw 0.25vw 0.25vw #7d7d7d;
+        text-shadow:0.25vw 0.25vw 0.25vw $textShadowTitre;
         margin-bottom: 3vw;
     }
 
@@ -84,7 +108,7 @@ body{
         font-size: 4.75vw;
         font-weight:normal;
         text-shadow:unset;
-        color: #7d7d7d;
+        color:$colorTextSousTitre;
         margin-bottom:8.09vw; 
        
     }
@@ -97,8 +121,8 @@ body{
         width: 57.79vw;
         line-height:13.30vw;
         font-size: 4.25vw;
-        box-shadow:0.5vw 0.5vw 1.25vw #7d7d7d;
-        background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+        box-shadow:0.5vw 0.5vw 1.25vw $boxShadowNavBtn;
+        background: $btnGrdBckColor;
         /*transition:0.7s ease-in-out;*/
         transition: transform 1000ms ease-in-out, opacity 700ms; 
         border-radius: 10vw;
@@ -106,7 +130,7 @@ body{
     }                  
         .btn-link{
             text-decoration: none;
-            color: white;
+            color:$BtnLinkNav;
         }   
             
         .btn-nav:hover{
@@ -114,11 +138,11 @@ body{
             line-height:13.80vw; 
             font-size:4.30vw;   
             box-shadow:1.75vw 1.75vw 2vw #7d7d7d;*/
-            background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+            background: $btnGrdBckColor;
             opacity: 0.7;
            
             transform: scale(1.2);
-            box-shadow:0.95vw 0.95vw 1.95vw #3d3d3d;
+            box-shadow:0.95vw 0.95vw 1.95vw $boxShadowBtnNavHover;
           
         }
         
@@ -159,9 +183,9 @@ body{
                 padding-left: 8.68vw; 
                 margin-bottom: 6.27vw;
                 font-size: 4.25vw;
-                box-shadow:0.5vw 0.5vw 1.25vw #7d7d7d;
-                background-color: #F2F2F2;
-                /*background: lightcoral;*/
+                box-shadow:0.5vw 0.5vw 1.25vw $boxShadowNavBtn;
+                background-color:$mainBckColor;
+             
                 transition:0.7s ease-in-out 0.07s;
                 border-radius: 7vw;
                 .btn-link{
@@ -170,16 +194,35 @@ body{
                 }
                 
                 i{
+                    
+                    font-size: 6.25vw;
                     padding-right: 6.27vw;
-                    color: grey;
+                    color: $iconBtnLink;
                   }
-            }    
+
+              
+
+            }  
+            .chiffre{
+                font-family:'roboto';
+                justify-content: center;
+                color: white;
+                width: 8vw;
+                height: 8vw;
+                line-height: 8vw;
+                background-color: #9356dc;
+                border-radius:50%;
+                margin-right: 6vw;
+                margin-left: -13vw;
+            } 
+        
+            
     
             
     main{
         width:100%;
         height: 323.72vw;
-        background:#F2F2F2;
+        background:$mainBckColor;
         display: flex;
         flex-direction: column;
         padding-bottom: 16vw;
@@ -199,10 +242,64 @@ body{
         width:88.98vw;
         height:66.94vw;
         overflow: hidden;
-        border: 0.5vw solid white;
-        background: white;
+        border: 0.5vw solid $itemBorder;
+        background: $itemBck;
         border-radius: 5vw;
         margin: auto;
+
+        .nouveau{
+            position: absolute;
+            width: 21.5vw;
+            height: 7.5vw;
+            z-index: 1;
+            font-size: 3.7vw;
+            background: #99e2d0;
+            color: #008766;
+            text-shadow: #4cb49b;
+            border-radius: 0.5vw;
+            text-align: center;
+            line-height: 7.5vw;
+            transform: translate(64.5vw,4vw);
+        }
+
+        
+
+        .heart{
+            position: absolute;
+            overflow: hidden;
+            font-weight: normal;
+            font-size: 7vw;
+            z-index: 1;
+            transform: translate(72.25vw, -11vw);
+            
+
+            &:hover{
+                color: red;
+                display: none;
+            }
+        }
+        .heart2{
+            position: absolute;
+            overflow: hidden;
+            font-weight: normal;
+            color:white;
+            font-size: 7vw;
+            
+            transform: translate(72.25vw, -11vw);
+
+            &:hover{
+                color: red;
+                z-index: 1;
+                
+               
+            }
+            
+        }
+
+       
+        
+        
+      
 
         img{
             border-top-left-radius: 5vw;
@@ -217,8 +314,8 @@ body{
         .caption{
             width: 100.1%;
             height:20.33vw;
-            color: black;
-            background: white;
+            color:$captionColor;
+           
             transform: translate(0%,-15vw);
             border-bottom-left-radius: 5vw;
             border-bottom-right-radius: 5vw;
@@ -235,13 +332,15 @@ body{
         } 
 
     }
+
+ 
   
     footer{
         width: 100vw;
         height: 51.69vw;
         
-        color: white;
-        background: rgb(34, 32, 32);
+        color: $footerColor;
+        background: $footerBck;
         
         
         
@@ -249,6 +348,7 @@ body{
             padding-top: 5vw;
             width: 90vw;
             margin: auto;
+            font-family:'Shrikhand';
             font-size: 5vw;
             padding-bottom: 5vw;
         }
@@ -262,6 +362,19 @@ body{
         li{
             list-style-type: none;
             padding-bottom: 2vw;
+        }
+       
+        .fa-utensils{
+            position: relative;
+            padding-right: 3vw;
+            top:-0.3vw;
+            font-size: 3.75vw;
+        }
+        .fa-hands-helping{
+            position: relative;
+            top: -0.3vw;
+            font-size: 3vw;
+            padding-right: 2.25vw;
         }
     }
              
