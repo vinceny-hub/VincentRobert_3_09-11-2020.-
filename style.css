@@ -222,13 +222,11 @@ main h2 {
   overflow: hidden;
   font-weight: normal;
   font-size: 6.7vw;
+  color: black;
   transform: translate(72.25vw, -11vw);
 }
-.item .heart .fa-heart {
-  color: red;
-}
-.item .heart #select1:checked ~ .fa-heart {
-  color: green;
+.item #select1:checked ~ .heart {
+  color: #9356DC;
 }
 .item .heart2 {
   position: absolute;
@@ -255,6 +253,16 @@ main h2 {
   scale: 1.03;
   opacity: 1;
   z-index: 1;
+}
+.item #select1 {
+  position: absolute;
+  margin-left: 74.5vw;
+  margin-top: -8.5vw;
+  z-index: 1;
+  opacity: 0;
+}
+.item #select1:checked ~ .heart2 .fa-heart {
+  opacity: 1;
 }
 .item img {
   border-top-left-radius: 5vw;
