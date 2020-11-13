@@ -184,16 +184,20 @@ header .logo {
 }
 
 .slide-check {
-  position: absolute;
-  margin-left: 90vw;
+  position: relative;
+  margin-left: 95vw;
+  line-height: 19.73vw;
   -webkit-transition: -webkit-transform 1500ms;
   transition: -webkit-transform 1500ms;
   transition: transform 1500ms;
   transition: transform 1500ms, -webkit-transform 1500ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  width: 25vw;
+  width: 20vw;
   height: 19.73vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: green;
 }
 
@@ -231,18 +235,16 @@ header .logo {
   transition: transform 0ms, -webkit-transform 0ms;
 }
 
-.slide-move {
-  background: none;
-  width: 85vw;
-  height: 19.73vw;
-}
-
+/*  .slide-move{
+           
+           background: none;
+           width: 85vw;
+           height: 19.73vw;
+       }*/
 .slide {
   position: absolute;
   width: 90vw;
   height: 20vw;
-  -webkit-transform: translate(0vw);
-          transform: translate(0vw);
   -webkit-transition: -webkit-transform 1000ms;
   transition: -webkit-transform 1000ms;
   transition: transform 1000ms;
@@ -263,7 +265,7 @@ header .logo {
           transition-timing-function: ease-in-out;
 }
 
-.slide-tarif:hover {
+.slide:hover > .slide-tarif {
   -webkit-transform: translate(-5vw);
           transform: translate(-5vw);
   -webkit-transition: -webkit-transform 100ms ease-in-out;
@@ -276,25 +278,46 @@ header .logo {
             animation-delay: 0.3s;*/
 }
 
-@-webkit-keyframes slide-p {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+.check-move {
+  display: block;
+  margin: auto;
+}
+
+.check-move .fa-check-circle {
+  position: relative;
+  rotate: 0deg;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  color: red;
+  z-index: 1;
+  font-size: 5vw;
+}
+
+.slide:hover > .slide-check .fa-check-circle {
+  -webkit-animation: rotation 2s;
+          animation: rotation 2s;
+  color: blue;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  100% {
-    -webkit-transform: translateX(-5vw);
-            transform: translateX(-5vw);
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@keyframes slide-p {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  100% {
-    -webkit-transform: translateX(-5vw);
-            transform: translateX(-5vw);
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -365,6 +388,12 @@ section .titreMenu {
   -webkit-transition: 0.7s ease-in-out 0.07s;
   transition: 0.7s ease-in-out 0.07s;
   border-radius: 3.5vw;
+  /*  i{
+                    
+                    font-size: 6.25vw;
+                    padding-right: 6.27vw;
+                    color: $iconBtnLink;
+                  }*/
 }
 
 .btn h4 {
@@ -413,12 +442,6 @@ section .titreMenu {
 .btn .btn-link {
   color: black;
   font-weight: 500;
-}
-
-.btn i {
-  font-size: 6.25vw;
-  padding-right: 6.27vw;
-  color: grey;
 }
 
 .chiffre {

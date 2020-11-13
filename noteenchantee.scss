@@ -196,15 +196,16 @@ body{
        }
        
        .slide-check{
-           position: absolute;
-             margin-left: 90vw;
-            
-            
+            position: relative;
+             margin-left: 95vw;
+    
+           line-height: 19.73vw;
            transition: transform 1500ms;
            transition-timing-function: ease-in-out;
-           width: 25vw;
+           width: 20vw;
            height: 19.73vw;
-       
+           justify-content: center;
+           
            background-color: green;
        
        
@@ -239,19 +240,19 @@ body{
            
        
        }
-       .slide-move{
+     /*  .slide-move{
            
            background: none;
            width: 85vw;
            height: 19.73vw;
-       }
+       }*/
        
        .slide{
            position:absolute;
            width: 90vw;
            height: 20vw;
            
-           transform: translate(0vw);
+          
            transition: transform 1000ms;
            transition-timing-function: ease-in-out;
            
@@ -271,7 +272,9 @@ body{
        
            
        }
-       .slide-tarif:hover{
+
+
+       .slide:hover> .slide-tarif{
            
            transform: translate(-5vw);
             transition: transform 100ms ease-in-out;
@@ -282,14 +285,49 @@ body{
             animation-delay: 0.3s;*/
        }
 
-       @keyframes slide-p{
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-5vw);
-        }
-      }
+       .check-move{
+           display: block;
+           margin: auto;
+       }
+
+     
+
+
+
+.check-move .fa-check-circle{
+    position: relative;
+    
+    rotate: (0deg);
+    transform-origin: 50% 50%;
+	color: red;
+    z-index: 1;
+    font-size: 5vw;
+	
+
+	
+}
+
+.slide:hover > .slide-check .fa-check-circle{
+   	animation: rotation 2s;
+    
+    color: blue;
+    
+}
+
+
+@keyframes rotation{
+	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg)
+	}
+
+
+
+
+}
 
 
              
@@ -410,12 +448,12 @@ body{
                     font-weight: 500;
                 }
                 
-                i{
+              /*  i{
                     
                     font-size: 6.25vw;
                     padding-right: 6.27vw;
                     color: $iconBtnLink;
-                  }
+                  }*/
 
               
 
