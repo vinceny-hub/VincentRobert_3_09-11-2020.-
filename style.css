@@ -219,7 +219,8 @@ main h2 {
 }
 .item .heart {
   position: absolute;
-  overflow: hidden;
+  width: 7vw;
+  height: 7vw;
   font-weight: normal;
   font-size: 6.7vw;
   color: black;
@@ -250,7 +251,7 @@ main h2 {
   }*/
 }
 .item .heart2 .fa-heart:active {
-  scale: 1.03;
+  scale: 1.05;
   opacity: 1;
   z-index: 1;
 }

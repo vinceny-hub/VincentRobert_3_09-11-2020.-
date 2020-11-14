@@ -30,6 +30,8 @@ body {
 /* début de l'entête */
 header {
   width: 100%;
+  height: 9vw;
+  line-height: 9vw;
   background: white;
   margin-top: 2.90vw;
   display: -webkit-box;
@@ -43,8 +45,29 @@ header {
 }
 
 header .logo {
-  width: 40vw;
-  height: 7vw;
+  width: 45vw;
+  height: 9vw;
+  border: solid 1vw red;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header h1 {
+  font-family: 'Shrikhand';
+  font-size: 8vw;
+  color: black;
+  line-height: 9vw;
+}
+
+header .arrow {
+  position: absolute;
+  width: 100vw;
+  margin-left: 10vw;
+  line-height: 9vw;
+  font-size: 6vw;
+  color: black;
 }
 
 .photo {
@@ -126,6 +149,12 @@ header .logo {
   margin-bottom: 8.09vw;
 }
 
+.titreRestaurant {
+  font-size: 7vw;
+  margin-left: -5vw;
+  rotate: -0.3deg;
+}
+
 /*fin des titres*/
 /* Bouton principal d'exploration et de commande*/
 .btn-nav {
@@ -178,9 +207,13 @@ header .logo {
           transition-timing-function: ease-in-out;
   width: 15vw;
   height: 19.73vw;
-  background-color: violet;
-  text-align: left;
+  background-color: white;
   padding-left: 2vw;
+}
+
+.slide-point p {
+  padding-top: 10.73vw;
+  margin-left: -2vw;
 }
 
 .slide-check {
@@ -194,11 +227,11 @@ header .logo {
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   width: 20vw;
-  height: 19.73vw;
+  height: 20vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: green;
+  background-color: #99e2d0;
 }
 
 .slide-tarif {
@@ -213,26 +246,59 @@ header .logo {
   transition: transform 100ms, -webkit-transform 100ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  width: 100%;
-  height: 20vw;
+  width: 80vw;
+  height: 19.73vw;
   -webkit-transform: scale(1);
           transform: scale(1);
-  background-color: blue;
+  /* background-color: blue;*/
   opacity: 0.6;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.box-slide {
-  width: 10vw;
-  height: 19.73vw;
-  background-color: orange;
-  text-align: left;
-  -webkit-transition: -webkit-transform 0ms;
-  transition: -webkit-transform 0ms;
-  transition: transform 0ms;
-  transition: transform 0ms, -webkit-transform 0ms;
+.box-slide-up {
+  position: absolute;
+  margin-left: 80vw;
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  width: 12vw;
+  height: 9.865vw;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: white;
+  opacity: 1;
+}
+
+.box-slide-up p {
+  margin-left: -1.7vw;
+  padding-top: 4.2vw;
+}
+
+.box-slide-down {
+  position: absolute;
+  margin-left: 80vw;
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  width: 12vw;
+  height: 9.865vw;
+  -webkit-transform: translate(0, 10vw);
+          transform: translate(0, 10vw);
+  background-color: white;
+  opacity: 1;
+}
+
+.box-slide-down p {
+  margin-left: -1.7vw;
+  padding-top: 1.2vw;
 }
 
 /*  .slide-move{
@@ -244,11 +310,11 @@ header .logo {
 .slide {
   position: absolute;
   width: 90vw;
-  height: 20vw;
-  -webkit-transition: -webkit-transform 1000ms;
-  transition: -webkit-transform 1000ms;
-  transition: transform 1000ms;
-  transition: transform 1000ms, -webkit-transform 1000ms;
+  height: 19.73vw;
+  -webkit-transition: -webkit-transform 700ms;
+  transition: -webkit-transform 700ms;
+  transition: transform 700ms;
+  transition: transform 700ms, -webkit-transform 700ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
 }
@@ -257,17 +323,17 @@ header .logo {
   /*animation: slide-left 2s ease-in-out alternate forwards;*/
   -webkit-transform: translate(-20vw);
           transform: translate(-20vw);
-  -webkit-transition: -webkit-transform 1500ms;
-  transition: -webkit-transform 1500ms;
-  transition: transform 1500ms;
-  transition: transform 1500ms, -webkit-transform 1500ms;
+  -webkit-transition: -webkit-transform 700ms;
+  transition: -webkit-transform 700ms;
+  transition: transform 700ms;
+  transition: transform 700ms, -webkit-transform 700ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
 }
 
-.slide:hover > .slide-tarif {
-  -webkit-transform: translate(-5vw);
-          transform: translate(-5vw);
+.slide:hover > .box-slide-up {
+  -webkit-transform: translate(-4.7vw);
+          transform: translate(-4.7vw);
   -webkit-transition: -webkit-transform 100ms ease-in-out;
   transition: -webkit-transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
@@ -278,6 +344,19 @@ header .logo {
             animation-delay: 0.3s;*/
 }
 
+.slide:hover > .box-slide-down {
+  -webkit-transform: translate(-4.7vw, 9.865vw);
+          transform: translate(-4.7vw, 9.865vw);
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+  -webkit-transition-delay: 0.33s;
+          transition-delay: 0.33s;
+  /* animation: slide-p forwards;
+         animation-delay: 0.3s;*/
+}
+
 .check-move {
   display: block;
   margin: auto;
@@ -285,18 +364,18 @@ header .logo {
 
 .check-move .fa-check-circle {
   position: relative;
+  margin-top: 6vw;
   rotate: 0deg;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  color: red;
+  color: white;
   z-index: 1;
-  font-size: 5vw;
+  font-size: 7vw;
 }
 
 .slide:hover > .slide-check .fa-check-circle {
-  -webkit-animation: rotation 2s;
-          animation: rotation 2s;
-  color: blue;
+  -webkit-animation: rotation 1200ms;
+          animation: rotation 1200ms;
 }
 
 @-webkit-keyframes rotation {
@@ -421,7 +500,6 @@ section .titreMenu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1vw solid black;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -432,7 +510,6 @@ section .titreMenu {
 }
 
 .btn .captionCheck {
-  border: 1vw solid red;
   width: 35vw;
   height: 19.73vw;
   -webkit-transform: translate(60vw, 0);
