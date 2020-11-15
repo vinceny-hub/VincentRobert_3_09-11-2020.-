@@ -268,12 +268,13 @@ main h2 {
 
 .item .heart {
   position: absolute;
+  width: 7vw;
+  height: 7vw;
   font-weight: normal;
   font-size: 6.7vw;
   color: black;
   -webkit-transform: translate(72.25vw, -11vw);
           transform: translate(72.25vw, -11vw);
-  background-color: orange;
 }
 
 .item #select1:checked ~ .heart {
@@ -307,7 +308,7 @@ main h2 {
 }
 
 .item .heart2 .fa-heart:active {
-  scale: 1.3;
+  scale: 1.05;
   opacity: 1;
   z-index: 1;
 }

@@ -25,11 +25,11 @@ body {
   width: 100%;
   margin: auto;
   font-family: 'Roboto';
+  overflow-x: hidden;
 }
 
 /* début de l'entête */
 header {
-  width: 100%;
   height: 9vw;
   line-height: 9vw;
   background: white;
@@ -71,7 +71,7 @@ header .arrow {
 }
 
 .photo {
-  width: 100%;
+  width: 100vw;
   height: 92.5vw;
   overflow: hidden;
 }
@@ -79,7 +79,7 @@ header .arrow {
 .image {
   margin-top: -9vw;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 92.5vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -92,11 +92,15 @@ header .arrow {
 /*début de la partie explorer avec la boite de recherche 
     les titres et le bouton "explorer nos restaurants*/
 .explorer {
-  width: 100%;
-  height: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 50vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #F2F2F2;
-  text-align: center;
-  line-height: 70vw;
 }
 
 /* boite de recherche */
@@ -150,6 +154,7 @@ header .arrow {
 }
 
 .titreRestaurant {
+  margin-top: 33.25vw;
   font-size: 7vw;
   margin-left: -5vw;
   rotate: -0.3deg;
@@ -161,7 +166,7 @@ header .arrow {
   border: none;
   margin: auto;
   width: 57.79vw;
-  line-height: 13.30vw;
+  height: 13.3vw;
   font-size: 4.25vw;
   -webkit-box-shadow: 0.5vw 0.5vw 1.25vw #7d7d7d;
           box-shadow: 0.5vw 0.5vw 1.25vw #7d7d7d;
@@ -208,26 +213,28 @@ header .arrow {
   width: 15vw;
   height: 19.73vw;
   background-color: white;
+  font-family: 'Roboto';
   padding-left: 2vw;
 }
 
 .slide-point p {
-  padding-top: 10.73vw;
-  margin-left: -2vw;
+  font-weight: bold;
+  padding-top: 11vw;
+  margin-left: -3.63vw;
 }
 
 .slide-check {
   position: relative;
-  margin-left: 95vw;
-  line-height: 19.73vw;
+  margin-left: 92.93vw;
+  width: 15.76vw;
+  height: 20vw;
+  line-height: 20vw;
   -webkit-transition: -webkit-transform 1500ms;
   transition: -webkit-transform 1500ms;
   transition: transform 1500ms;
   transition: transform 1500ms, -webkit-transform 1500ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  width: 20vw;
-  height: 20vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -266,17 +273,17 @@ header .arrow {
   transition: transform 100ms, -webkit-transform 100ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  width: 12vw;
+  width: 15vw;
   height: 9.865vw;
-  -webkit-transform: scale(1);
-          transform: scale(1);
   background-color: white;
   opacity: 1;
 }
 
 .box-slide-up p {
-  margin-left: -1.7vw;
-  padding-top: 4.2vw;
+  padding-top: 3.3vw;
+  font-size: 5vw;
+  display: block;
+  text-align: left;
 }
 
 .box-slide-down {
@@ -288,7 +295,7 @@ header .arrow {
   transition: transform 100ms, -webkit-transform 100ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  width: 12vw;
+  width: 20vw;
   height: 9.865vw;
   -webkit-transform: translate(0, 10vw);
           transform: translate(0, 10vw);
@@ -297,8 +304,10 @@ header .arrow {
 }
 
 .box-slide-down p {
-  margin-left: -1.7vw;
-  padding-top: 1.2vw;
+  padding-top: 0.3vw;
+  font-size: 4.75vw;
+  display: block;
+  text-align: left;
 }
 
 /*  .slide-move{
@@ -309,7 +318,7 @@ header .arrow {
        }*/
 .slide {
   position: absolute;
-  width: 90vw;
+  width: 92.93vw;
   height: 19.73vw;
   -webkit-transition: -webkit-transform 700ms;
   transition: -webkit-transform 700ms;
@@ -321,8 +330,8 @@ header .arrow {
 
 .slide:hover {
   /*animation: slide-left 2s ease-in-out alternate forwards;*/
-  -webkit-transform: translate(-20vw);
-          transform: translate(-20vw);
+  -webkit-transform: translate(-15.76vw);
+          transform: translate(-15.76vw);
   -webkit-transition: -webkit-transform 700ms;
   transition: -webkit-transform 700ms;
   transition: transform 700ms;
@@ -332,12 +341,13 @@ header .arrow {
 }
 
 .slide:hover > .box-slide-up {
-  -webkit-transform: translate(-4.7vw);
-          transform: translate(-4.7vw);
+  -webkit-transform: translate(-14vw);
+          transform: translate(-14vw);
   -webkit-transition: -webkit-transform 100ms ease-in-out;
   transition: -webkit-transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+  font-size: 10vw;
   -webkit-transition-delay: 0.33s;
           transition-delay: 0.33s;
   /* animation: slide-p forwards;
@@ -345,8 +355,8 @@ header .arrow {
 }
 
 .slide:hover > .box-slide-down {
-  -webkit-transform: translate(-4.7vw, 9.865vw);
-          transform: translate(-4.7vw, 9.865vw);
+  -webkit-transform: translate(-14vw, 9.865vw);
+          transform: translate(-14vw, 9.865vw);
   -webkit-transition: -webkit-transform 100ms ease-in-out;
   transition: -webkit-transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
@@ -358,19 +368,22 @@ header .arrow {
 }
 
 .check-move {
-  display: block;
-  margin: auto;
+  height: 20vw;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .check-move .fa-check-circle {
   position: relative;
-  margin-top: 6vw;
   rotate: 0deg;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   color: white;
   z-index: 1;
-  font-size: 7vw;
+  font-size: 6vw;
 }
 
 .slide:hover > .slide-check .fa-check-circle {
@@ -426,12 +439,12 @@ header .arrow {
 }
 
 section {
-  width: 95vw;
+  width: 100vw;
   margin: auto;
 }
 
 section .titreMenu {
-  margin-left: 2.5vw;
+  margin-left: 5vw;
   width: 12.5vw;
   border-bottom: 1vw solid #99e2d0;
   font-size: 5vw;
@@ -453,7 +466,7 @@ section .titreMenu {
   border: none;
   margin-left: auto;
   margin-right: auto;
-  width: 95vw;
+  width: 92.93vw;
   height: 19.73vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -475,22 +488,6 @@ section .titreMenu {
                   }*/
 }
 
-.btn h4 {
-  padding-top: 2vw;
-  padding-left: 2vw;
-  display: block;
-  text-align: left;
-  font-size: 4.65vw;
-}
-
-.btn p {
-  display: block;
-  text-align: left;
-  padding-bottom: 2vw;
-  padding-left: 2vw;
-  font-size: 4.25vw;
-}
-
 .btn .caption {
   position: absolute;
   display: -webkit-box;
@@ -503,10 +500,36 @@ section .titreMenu {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  font-family: 'Roboto';
   width: 95vw;
   height: 19.73vw;
   -webkit-transform: translate(0vw, 0);
           transform: translate(0vw, 0);
+}
+
+.btn .caption h4 {
+  padding-top: 2vw;
+  padding-left: 2.71vw;
+  display: block;
+  text-align: left;
+  font-size: 4.6vw;
+}
+
+.btn .caption p {
+  display: block;
+  text-align: left;
+  padding-bottom: 2vw;
+  padding-left: 2.71vw;
+  font-weight: normal;
+  font-size: 3.75vw;
+}
+
+.btn .slide-point p {
+  display: block;
+  text-align: left;
+  padding-bottom: 2vw;
+  padding-left: 2.71vw;
+  font-size: 4vw;
 }
 
 .btn .captionCheck {
@@ -539,11 +562,10 @@ section .titreMenu {
 main {
   border-top-left-radius: 12vw;
   border-top-right-radius: 12vw;
-  padding-top: 30vw;
   z-index: 1;
   margin-top: -33.25vw;
-  width: 100%;
-  height: 323.72vw;
+  width: 100vw;
+  height: 331.86vw;
   background: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
