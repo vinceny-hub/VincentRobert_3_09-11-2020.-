@@ -21,6 +21,79 @@
   src: url("./coeur/coeur1.ttf");
 }
 
+.photo {
+  -webkit-animation: anim-photo 0.66s ease-in-out;
+          animation: anim-photo 0.66s ease-in-out;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes anim-photo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim-photo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-box {
+  position: absolute;
+  width: 100%;
+  height: 391.86vw;
+  border-top-left-radius: 12vw;
+  border-top-right-radius: 12vw;
+  z-index: 5;
+  background: white;
+  -webkit-animation: anim forwards 3.8s ease-in-out;
+          animation: anim forwards 3.8s ease-in-out;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0;
+  }
+}
+
 body {
   width: 100%;
   margin: auto;
@@ -29,9 +102,27 @@ body {
 }
 
 main {
-  border: 1vw solid red;
-  -webkit-animation: page-animation 2s;
-          animation: page-animation 2s;
+  /* border: 1vw solid red;*/
+  -webkit-animation: page-animation 2.3s forwards;
+          animation: page-animation 2.3s forwards;
+}
+
+@-webkit-keyframes page-animation-main {
+  0% {
+    margin-bottom: 10vw;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes page-animation-main {
+  0% {
+    margin-bottom: 10vw;
+  }
+  100% {
+    top: 0%;
+  }
 }
 
 .btn {
@@ -41,7 +132,7 @@ main {
 
 @-webkit-keyframes page-animation-btn {
   0% {
-    margin-bottom: 2.75vw;
+    margin-bottom: 10vw;
   }
   100% {
     top: 0%;
@@ -50,7 +141,7 @@ main {
 
 @keyframes page-animation-btn {
   0% {
-    margin-bottom: 2.75vw;
+    margin-bottom: 10vw;
   }
   100% {
     top: 0%;
@@ -59,19 +150,19 @@ main {
 
 @-webkit-keyframes page-animation {
   0% {
-    margin-top: 15vw;
     /*height: 311.86vw;*/
   }
   100% {
+    margin-top: -33.25vw;
   }
 }
 
 @keyframes page-animation {
   0% {
-    margin-top: 15vw;
     /*height: 311.86vw;*/
   }
   100% {
+    margin-top: -33.25vw;
   }
 }
 
@@ -143,8 +234,8 @@ header .arrow {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 30vw;
-  padding-top: 5vw;
+  height: 50vw;
+  padding-bottom: 10vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -574,7 +665,6 @@ main {
   border-top-left-radius: 12vw;
   border-top-right-radius: 12vw;
   z-index: 1;
-  margin-top: -33.25vw;
   width: 100vw;
   height: 391.86vw;
   background: #F2F2F2;
@@ -585,7 +675,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 16vw;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
