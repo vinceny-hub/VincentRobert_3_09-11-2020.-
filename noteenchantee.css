@@ -28,6 +28,53 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  border: 1vw solid red;
+  -webkit-animation: page-animation 2s;
+          animation: page-animation 2s;
+}
+
+.btn {
+  -webkit-animation: page-animation-btn 3s;
+          animation: page-animation-btn 3s;
+}
+
+@-webkit-keyframes page-animation-btn {
+  0% {
+    margin-bottom: 2.75vw;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes page-animation-btn {
+  0% {
+    margin-bottom: 2.75vw;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@-webkit-keyframes page-animation {
+  0% {
+    margin-top: 15vw;
+    /*height: 311.86vw;*/
+  }
+  100% {
+  }
+}
+
+@keyframes page-animation {
+  0% {
+    margin-top: 15vw;
+    /*height: 311.86vw;*/
+  }
+  100% {
+  }
+}
+
 /* début de l'entête */
 header {
   height: 9vw;
@@ -95,8 +142,9 @@ header .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
-  height: 50vw;
+  width: 100%;
+  height: 30vw;
+  padding-top: 5vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -154,10 +202,11 @@ header .arrow {
 }
 
 .titreRestaurant {
-  margin-top: 33.25vw;
+  position: relative;
   font-size: 7vw;
   margin-left: -5vw;
   rotate: -0.3deg;
+  z-index: 3;
 }
 
 /*fin des titres*/
@@ -264,52 +313,6 @@ header .arrow {
           justify-content: flex-end;
 }
 
-.box-slide-up {
-  position: absolute;
-  margin-left: 80vw;
-  -webkit-transition: -webkit-transform 100ms;
-  transition: -webkit-transform 100ms;
-  transition: transform 100ms;
-  transition: transform 100ms, -webkit-transform 100ms;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  width: 15vw;
-  height: 9.865vw;
-  background-color: white;
-  opacity: 1;
-}
-
-.box-slide-up p {
-  padding-top: 3.3vw;
-  font-size: 5vw;
-  display: block;
-  text-align: left;
-}
-
-.box-slide-down {
-  position: absolute;
-  margin-left: 80vw;
-  -webkit-transition: -webkit-transform 100ms;
-  transition: -webkit-transform 100ms;
-  transition: transform 100ms;
-  transition: transform 100ms, -webkit-transform 100ms;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  width: 20vw;
-  height: 9.865vw;
-  -webkit-transform: translate(0, 10vw);
-          transform: translate(0, 10vw);
-  background-color: white;
-  opacity: 1;
-}
-
-.box-slide-down p {
-  padding-top: 0.3vw;
-  font-size: 4.75vw;
-  display: block;
-  text-align: left;
-}
-
 /*  .slide-move{
            
            background: none;
@@ -328,7 +331,7 @@ header .arrow {
           transition-timing-function: ease-in-out;
 }
 
-.slide:hover {
+.slide:hover > .slide-box {
   /*animation: slide-left 2s ease-in-out alternate forwards;*/
   -webkit-transform: translate(-15.76vw);
           transform: translate(-15.76vw);
@@ -340,31 +343,13 @@ header .arrow {
           transition-timing-function: ease-in-out;
 }
 
-.slide:hover > .box-slide-up {
-  -webkit-transform: translate(-14vw);
-          transform: translate(-14vw);
-  -webkit-transition: -webkit-transform 100ms ease-in-out;
-  transition: -webkit-transform 100ms ease-in-out;
-  transition: transform 100ms ease-in-out;
-  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
-  font-size: 10vw;
-  -webkit-transition-delay: 0.33s;
-          transition-delay: 0.33s;
-  /* animation: slide-p forwards;
-            animation-delay: 0.3s;*/
-}
-
-.slide:hover > .box-slide-down {
-  -webkit-transform: translate(-14vw, 9.865vw);
-          transform: translate(-14vw, 9.865vw);
-  -webkit-transition: -webkit-transform 100ms ease-in-out;
-  transition: -webkit-transform 100ms ease-in-out;
-  transition: transform 100ms ease-in-out;
-  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
-  -webkit-transition-delay: 0.33s;
-          transition-delay: 0.33s;
-  /* animation: slide-p forwards;
-         animation-delay: 0.3s;*/
+.slide-box {
+  -webkit-transition: -webkit-transform 700ms;
+  transition: -webkit-transform 700ms;
+  transition: transform 700ms;
+  transition: transform 700ms, -webkit-transform 700ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .check-move {
@@ -386,7 +371,7 @@ header .arrow {
   font-size: 6vw;
 }
 
-.slide:hover > .slide-check .fa-check-circle {
+.slide:hover > .slide-box .fa-check-circle {
   -webkit-animation: rotation 1200ms;
           animation: rotation 1200ms;
 }
@@ -488,6 +473,14 @@ section .titreMenu {
                   }*/
 }
 
+.btn .slide:hover > .caption {
+  width: 54vw;
+  -webkit-transition: width 700ms 100ms;
+  transition: width 700ms 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
 .btn .caption {
   position: absolute;
   display: -webkit-box;
@@ -501,10 +494,14 @@ section .titreMenu {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-family: 'Roboto';
-  width: 95vw;
+  width: 80vw;
   height: 19.73vw;
   -webkit-transform: translate(0vw, 0);
           transform: translate(0vw, 0);
+  -webkit-transition: 700ms width 100ms;
+  transition: 700ms width 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .btn .caption h4 {
@@ -513,6 +510,13 @@ section .titreMenu {
   display: block;
   text-align: left;
   font-size: 4.6vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: width 700ms;
+  transition: width 700ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .btn .caption p {
@@ -522,6 +526,13 @@ section .titreMenu {
   padding-left: 2.71vw;
   font-weight: normal;
   font-size: 3.75vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: width 700ms;
+  transition: width 700ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .btn .slide-point p {
@@ -565,7 +576,7 @@ main {
   z-index: 1;
   margin-top: -33.25vw;
   width: 100vw;
-  height: 331.86vw;
+  height: 391.86vw;
   background: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
