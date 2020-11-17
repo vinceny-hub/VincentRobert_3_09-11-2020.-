@@ -202,6 +202,7 @@ main h2 {
   background: white;
   border-radius: 5vw;
   margin: auto;
+  z-index: 1;
 }
 .item .nouveau {
   position: absolute;
@@ -253,16 +254,16 @@ main h2 {
 .item .heart2 .fa-heart:active {
   scale: 1.05;
   opacity: 1;
-  z-index: 1;
 }
 .item #select1 {
   position: absolute;
-  margin-left: 74.5vw;
-  margin-top: -8.5vw;
+  scale: 9.1;
+  margin-left: 78.75vw;
+  margin-top: 55.5vw;
   z-index: 1;
   opacity: 0;
 }
-.item #select1:checked ~ .heart2 .fa-heart {
+.item #select1:checked ~ .lien .fa-heart {
   opacity: 1;
 }
 .item img {
@@ -273,9 +274,12 @@ main h2 {
   object-fit: cover;
   transform: translate(0%, -15vw);
 }
+.item .lien {
+  text-decoration: none;
+}
 .item .caption {
   width: 100.1%;
-  height: 20.33vw;
+  height: 19.33vw;
   color: Black;
   transform: translate(0%, -15vw);
   border-bottom-left-radius: 5vw;

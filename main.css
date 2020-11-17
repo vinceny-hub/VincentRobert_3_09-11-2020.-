@@ -248,6 +248,9 @@ main h2 {
   background: white;
   border-radius: 5vw;
   margin: auto;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  z-index: -1;
 }
 
 .item .nouveau {
@@ -318,7 +321,7 @@ main h2 {
   margin-left: 74.5vw;
   margin-top: -8.5vw;
   z-index: 1;
-  opacity: 0;
+  opacity: 1;
 }
 
 .item #select1:checked ~ .heart2 .fa-heart {

@@ -242,8 +242,9 @@ body{
         }
         
     }
-
+   
     .item{
+       
         width:88.98vw;
         height:66.94vw;
         overflow: hidden;
@@ -251,7 +252,10 @@ body{
         background: $itemBck;
         border-radius: 5vw;
         margin: auto;
+        
+        z-index: 1;
 
+              
         .nouveau{
             position: absolute;
             width: 21.5vw;
@@ -279,6 +283,7 @@ body{
             color:black;
             transform: translate(72.25vw, -11vw);
             
+            
 
 
         
@@ -287,9 +292,9 @@ body{
         }
                
         #select1:checked ~ .heart{
-               
+          
             color: #9356DC;
-               
+            
                  
                           
              }
@@ -301,6 +306,7 @@ body{
             position: absolute;
             font-weight: normal;
             transform: translate(72.08vw, -10.75vw);
+            
             
            
             
@@ -324,7 +330,7 @@ body{
             &:active{
                 scale:1.05;
                 opacity:1;
-                z-index: 1;
+               
               }
 
                         
@@ -335,15 +341,16 @@ body{
                       
         }
         #select1{
-            position:absolute;
-            
-            margin-left: 74.5vw;
-            margin-top: -8.5vw;
+            position: absolute;
+            scale:(9.1);
+            margin-left: 78.75vw;
+            margin-top:55.5vw;
             z-index: 1;
             opacity: 0;
+            
         }
-        #select1:checked ~ .heart2 .fa-heart{
-               
+        #select1:checked ~ .lien .fa-heart{
+        
           opacity: 1; 
                
                  
@@ -365,19 +372,24 @@ body{
           
            
         }
+        .lien{
+            text-decoration: none;
+        }
+
         .caption{
             width: 100.1%;
-            height:20.33vw;
+            height:19.33vw;
             color:$captionColor;
-           
             transform: translate(0%,-15vw);
             border-bottom-left-radius: 5vw;
             border-bottom-right-radius: 5vw;
             padding-top: 3.25vw;
             padding-left: 3.25vw;
+
         h4{
             font-size: 5vw;
-        }   
+        } 
+
         p{
             padding-top: 1vw;
             font-size: 4.5vw;
