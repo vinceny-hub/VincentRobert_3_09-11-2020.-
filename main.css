@@ -128,6 +128,14 @@ header .logo {
   color: white;
 }
 
+.btn:hover {
+  background-color: #ede2fa;
+}
+
+.btn:hover i {
+  color: #9356dc;
+}
+
 .btn-nav:hover {
   /* width: 58.29vw; 
             line-height:13.80vw; 
@@ -248,9 +256,7 @@ main h2 {
   background: white;
   border-radius: 5vw;
   margin: auto;
-  -webkit-text-decoration-style: none;
-          text-decoration-style: none;
-  z-index: -1;
+  z-index: 1;
 }
 
 .item .nouveau {
@@ -280,15 +286,11 @@ main h2 {
           transform: translate(72.25vw, -11vw);
 }
 
-.item #select1:checked ~ .heart {
-  color: #9356DC;
-}
-
 .item .heart2 {
   position: absolute;
   font-weight: normal;
-  -webkit-transform: translate(72.08vw, -10.75vw);
-          transform: translate(72.08vw, -10.75vw);
+  -webkit-transform: translate(72.08vw, -10.5vw);
+          transform: translate(72.08vw, -10.5vw);
 }
 
 .item .heart2 .fa-heart {
@@ -299,9 +301,9 @@ main h2 {
   -webkit-text-fill-color: transparent;
   font-size: 7vw;
   opacity: 0;
-  scale: 1;
-  -webkit-transition: opacity 150ms, scale 200ms ease-in-out;
-  transition: opacity 150ms, scale 200ms ease-in-out;
+  scale: 1.025;
+  -webkit-transition: opacity 200ms, scale 500ms ease-in-out;
+  transition: opacity 200ms, scale 500ms ease-in-out;
   /*&:hover{
                 scale:1;
                 opacity: 0;
@@ -313,19 +315,59 @@ main h2 {
 .item .heart2 .fa-heart:active {
   scale: 1.05;
   opacity: 1;
-  z-index: 1;
 }
 
 .item #select1 {
   position: absolute;
-  margin-left: 74.5vw;
-  margin-top: -8.5vw;
+  scale: 9.1;
+  margin-left: 78.75vw;
+  margin-top: 55.5vw;
   z-index: 1;
+  opacity: 0;
+}
+
+.item #select1:checked ~ .lien .fa-heart {
+  background-clip: text;
+  background: -webkit-gradient(linear, left top, right bottom, from(#fd48ca), to(#7423d6));
+  background: linear-gradient(to bottom right, #fd48ca, #7423d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 1;
 }
 
-.item #select1:checked ~ .heart2 .fa-heart {
+.item #select1:checked ~ .lien .fa-heart {
+  -webkit-animation: anim-heart 0.5s both;
+          animation: anim-heart 0.5s both;
+}
+
+@-webkit-keyframes anim-heart {
+  from {
+    scale: 0.7;
+  }
+  50% {
+    scale: 1.1;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes anim-heart {
+  from {
+    scale: 0.7;
+  }
+  50% {
+    scale: 1.1;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.item #select1:hover ~ .lien .fa-heart {
   opacity: 1;
+  -webkit-transition: opacity 200ms, scale 500ms ease-in-out;
+  transition: opacity 200ms, scale 500ms ease-in-out;
 }
 
 .item img {
@@ -339,9 +381,13 @@ main h2 {
           transform: translate(0%, -15vw);
 }
 
+.item .lien {
+  text-decoration: none;
+}
+
 .item .caption {
   width: 100.1%;
-  height: 20.33vw;
+  height: 19.33vw;
   color: Black;
   -webkit-transform: translate(0%, -15vw);
           transform: translate(0%, -15vw);

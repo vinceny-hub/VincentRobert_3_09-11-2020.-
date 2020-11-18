@@ -110,6 +110,13 @@ les titres et le bouton "explorer nos restaurants*/
   color: white;
 }
 
+.btn:hover {
+  background-color: #ede2fa;
+}
+.btn:hover i {
+  color: #9356dc;
+}
+
 .btn-nav:hover {
   /* width: 58.29vw; 
    line-height:13.80vw; 
@@ -227,13 +234,10 @@ main h2 {
   color: black;
   transform: translate(72.25vw, -11vw);
 }
-.item #select1:checked ~ .heart {
-  color: #9356DC;
-}
 .item .heart2 {
   position: absolute;
   font-weight: normal;
-  transform: translate(72.08vw, -10.75vw);
+  transform: translate(72.08vw, -10.5vw);
 }
 .item .heart2 .fa-heart {
   background-clip: text;
@@ -242,8 +246,8 @@ main h2 {
   -webkit-text-fill-color: transparent;
   font-size: 7vw;
   opacity: 0;
-  scale: 1;
-  transition: opacity 150ms, scale 200ms ease-in-out;
+  scale: 1.025;
+  transition: opacity 200ms, scale 500ms ease-in-out;
   /*&:hover{
       scale:1;
       opacity: 0;
@@ -264,7 +268,29 @@ main h2 {
   opacity: 0;
 }
 .item #select1:checked ~ .lien .fa-heart {
+  background-clip: text;
+  background: linear-gradient(to bottom right, #fd48ca, #7423d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 1;
+}
+.item #select1:checked ~ .lien .fa-heart {
+  animation: anim-heart 0.5s both;
+}
+@keyframes anim-heart {
+  from {
+    scale: 0.7;
+  }
+  50% {
+    scale: 1.1;
+  }
+  to {
+    scale: 1;
+  }
+}
+.item #select1:hover ~ .lien .fa-heart {
+  opacity: 1;
+  transition: opacity 200ms, scale 500ms ease-in-out;
 }
 .item img {
   border-top-left-radius: 5vw;

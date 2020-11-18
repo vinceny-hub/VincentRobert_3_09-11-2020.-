@@ -136,7 +136,16 @@ body{
         .btn-link{
             text-decoration: none;
             color:$BtnLinkNav;
-        }   
+        } 
+
+        .btn:hover{
+           background-color : #ede2fa;
+           i{
+            color: #9356dc;
+           }
+           
+           
+        }
             
         .btn-nav:hover{
            /* width: 58.29vw; 
@@ -190,9 +199,13 @@ body{
                 font-size: 4.25vw;
                 box-shadow:0.5vw 0.5vw 1.25vw $boxShadowNavBtn;
                 background-color:$mainBckColor;
-             
+                
                 transition:0.7s ease-in-out 0.07s;
                 border-radius: 7vw;
+
+                a{
+                    
+                }
                 .btn-link{
                     color: black;
                     font-weight: 500;
@@ -291,21 +304,13 @@ body{
             
         }
                
-        #select1:checked ~ .heart{
-          
-            color: #9356DC;
-            
-                 
-                          
-             }
-        
-        
+           
        
 
          .heart2{
             position: absolute;
             font-weight: normal;
-            transform: translate(72.08vw, -10.75vw);
+            transform: translate(72.08vw, -10.5vw);
             
             
            
@@ -318,8 +323,8 @@ body{
             -webkit-text-fill-color: transparent;
             font-size: 7vw;
             opacity:0;
-            scale: 1;
-            transition: opacity 150ms, scale 200ms ease-in-out; 
+            scale:(1.025);
+            transition: opacity 200ms, scale 500ms ease-in-out; 
 
               /*&:hover{
                 scale:1;
@@ -350,13 +355,42 @@ body{
             
         }
         #select1:checked ~ .lien .fa-heart{
-        
+            background-clip:text;
+            background:linear-gradient(to bottom right,#fd48ca,#7423d6);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+         
           opacity: 1; 
-               
+           
                  
                           
              }
 
+            #select1:checked ~ .lien .fa-heart{
+                animation: anim-heart 0.5s both;
+            }
+           
+
+            @keyframes anim-heart {
+                from{
+                    scale:(0.7);
+                   
+                }
+                50%{
+                    scale:(1.1);
+                }
+                to{
+                    scale: (1);
+                }
+                
+            }
+        
+        
+        #select1:hover ~ .lien .fa-heart{
+        
+            opacity: 1; 
+            transition: opacity 200ms, scale 500ms ease-in-out; 
+        }
        
         
         
