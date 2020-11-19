@@ -43,7 +43,7 @@ $footerColor:white;
 
 body{
     width: 100%;
-    margin: auto;
+    margin-bottom: 0vw;
     font-family:'Roboto';
 } 
 
@@ -203,9 +203,6 @@ body{
                 transition:0.7s ease-in-out 0.07s;
                 border-radius: 7vw;
 
-                a{
-                    
-                }
                 .btn-link{
                     color: black;
                     font-weight: 500;
