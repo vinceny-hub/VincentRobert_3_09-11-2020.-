@@ -1,6 +1,5 @@
-@media only screen and (min-width:1153px) and (max-width: 1480px){
-
-   
+@media only screen and (min-width:1481px) {
+    
     body{
       
      
@@ -9,7 +8,7 @@
       
         display: grid;  
         grid-template-columns: 1fr 90vw 1fr; 
-        grid-template-rows: 12vw 20vw 20vw 75vw 20vw;
+        grid-template-rows: 12vw 15vw 15vw 42.5vw 10vw;
         
         grid-template-areas:
         ' . header . '
@@ -26,12 +25,17 @@
     header{
        
         grid-area: header;
-        margin-left:-10vw;
+        margin-left:-15vw;
         
         
     
         width: 60vw;
-        height: 10vw;
+        height: 7vw;
+
+        .logo{
+            width: 30vw;
+            height: 5vw;
+        }
         
         
     }
@@ -46,24 +50,24 @@
       
 
         .recherche{
-            height: 5.63vw;
-            width: 60vw;
+            height: 4.63vw;
+            width: 30vw;
             margin-left:0vw;
             margin-bottom: 10.09vw;
           
 
             input{
                 position: absolute;
-                height: 5.63vw;
-                font-size: 2vw;
-                margin-left: -20vw;
+                height: 4.63vw;
+                font-size: 1.7vw;
+                margin-left: -9vw;
               
             }
 
             .fa-map-marker-alt {
                 position: absolute;
-                margin-left: -30vw;
-                margin-top: -2.25vw;
+                margin-left: -17vw;
+                line-height: 4.63vw;
                 width: 10vw;
                 
                 font-size: 3vw;
@@ -72,25 +76,25 @@
         }
          
           h1{
-              margin-left:-20vw;
+              margin-left:-24.25vw;
               margin-top: -7vw;
               width: 90vw;
-              font-size: 3vw;
+              font-size: 2.5vw;
             
           }
 
           p{
-              margin-left: -15vw;
+              margin-left: -19.5vw;
               margin-top: -2vw;
-              font-size: 2vw;
+              font-size: 1.7vw;
           }
           .btn-nav{
             position: absolute;
-            width: 12.5vw;
-            height: 12.5vw;
-            margin-top: -19vw;
-            margin-left: 20vw;
-            font-size: 1.75vw;
+            width: 10.5vw;
+            height: 10.5vw;
+            margin-top: -17vw;
+            margin-left: 10vw;
+            font-size: 1.5vw;
             line-height: 2vw;
             
                      
@@ -108,16 +112,16 @@
     }
     .fonctionnement{
         position: relative;
-        
+        margin-left: 0vw;
         grid-area: fonctionnement;
-        width: 90vw;
+        width: 75vw;
         height:20vw;
        
     
         h2{
-            font-size: 2.75vw;
+            font-size: 2vw;
             margin-top: 2vw;
-            margin-bottom: 3vw;
+            margin-bottom: 2vw;
            
         }
     
@@ -128,6 +132,8 @@
         
         display:flex;
         flex-direction:row;
+    
+        
        
     
       
@@ -137,18 +143,19 @@
     
     .btn {
         
-        
-        margin-right: 5vw;
+        margin-left:1vw;
+      
+       
         
         
         
        
-        width:25vw;
-        height: 5.73vw;
+        width:20.5vw;
+        height: 4.73vw;
        
        
       
-        font-size: 1.5vw;
+        font-size: 1.25vw;
       
        
         
@@ -164,8 +171,8 @@
         i{
                     
             font-size: 2vw;
-            padding-right: 2vw;
-            margin-left: -5vw;
+            padding-right: 1.5vw;
+            margin-left: -6vw;
          
           }
 
@@ -187,9 +194,9 @@
         font-family:'roboto';
         justify-content: center;
         color: white;
-        width:4vw;
-        height:4vw;
-        line-height: 4vw;
+        width:3vw;
+        height:3vw;
+        line-height: 3vw;
         background-color: #9356dc;
         border-radius:50%;
         margin-left:-10vw;
@@ -207,14 +214,14 @@
         flex-wrap:wrap;
         margin: auto;
         width: 90vw;
-        height: 75vw;
+        height: 42.5vw;
         justify-content: space-around;
     
         h2{
             margin-top:-10vw;
             margin-left:0vw;
-            margin-bottom: 5vw;
-            font-size: 2.75vw;
+            margin-bottom: 2.5vw;
+            font-size: 2vw;
         }
     
             
@@ -222,44 +229,46 @@
         
     
         .item{
-            width:40.49vw;
-            height:25.48vw;
+            width:42vw;
+            height:12.5vw;
             margin-bottom: 5vw;
-            border-radius: 1.25vw;
+            border-radius: 0.7vw;
+            border: 0.25vw solid white;
+           
     
             .nouveau{
-                margin-left: 23.5vw;
-                margin-top: -1vw;
-                transform: scale(0.4);
+                margin-left: 27vw;
+                margin-top: -2vw;
+                transform: scale(0.25);
                     
                  
                 }
     
                 #select1{
                     position: absolute;
-                    scale:(5);
-                    margin-left: 35.7vw;
-                    margin-top:20.1vw;
+                    scale:(4);
+                    margin-left: 37.95vw;
+                    margin-top:8.5vw;
                     z-index: 1;
                     opacity:0;
                     
                 }
     
                 .heart{
-                    
-                    margin-left: -40vw;
-                    margin-top:6vw;
-                    font-size: 3.7vw;
+                  
+                    margin-left: -56vw;
+                    margin-top:13.7vw;
+                    font-size: 3vw;
                     
                    
                    
                 }
                 .heart2{
                   
-                    margin-left: -39.9vw;
-                    margin-top:5.7vw;
+                    margin-left: -55.79vw;
+                    margin-top:13.4vw;
                     .fa-heart{
-                        font-size: 3.75vw;
+                        font-size: 3vw;
                     }
                    
                 }
@@ -268,24 +277,25 @@
     
     
             img{
-                width:40.49vw;
-                height:27vw;
+                width:19.49vw;
+                height:16vw;
                 object-fit: cover;
-                transform: translate(0%,-10vw);
+                transform: translate(0vw,-3vw);
+                border-radius:unset;                
             }
            
             
     
             .caption{
-    
-                transform: translate(-1vw,-13.5vw);
+              
+                transform: translate(17.5vw,-19.5vw);
                 h4{
                     padding-top: 0.75vw;
-                    font-size:2.25vw;
+                    font-size:1.5vw;
     
                 }
                 p{
-                    font-size:2.25vw;
+                    font-size:1.5vw;
                     padding-top: 0.5vw;
                 }
     
@@ -300,7 +310,7 @@
         
     }
     footer{
-        height: 20vw;
+        height: 10vw;
         position: relative;
         grid-area: footer;
       
@@ -309,17 +319,19 @@
         
     
         h3{
-            font-size:2.75vw;
-            padding-top: 3vw;
-            padding-bottom: 4vw;
+            font-size:2.25vw;
+            padding-top: 1vw;
+            padding-bottom: 2vw;
+            margin-left:6.5vw;
         }
         ul{
             display: inline-flex;
+          
             
            
         
-            font-size:1.5vw;
-            margin-left:0vw;
+            font-size:1.25vw;
+            
 
             
             
@@ -334,22 +346,20 @@
         .fa-utensils{
             position: absolute;
           
-            left:6.5vw;
-            top:10.5vw;
-            font-size: 2.25vw;
+            left:7vw;
+            top:6vw;
+            font-size: 1.5vw;
         }
         .fa-hands-helping{
             position: absolute;
-            left: 30vw;
-            top:10.5vw;
-            font-size: 2.25vw;
-            padding-right: 2.25vw;
+            left: 28.25vw;
+            top:6vw;
+            font-size: 1.5vw;
+            
         }
         
        
        
     }
-    
-    
-    
-    }
+
+}
