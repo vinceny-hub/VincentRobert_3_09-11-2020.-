@@ -7,7 +7,7 @@
        display: grid;
        
        grid-template-columns: 1fr 80vw 1fr;
-       grid-template-rows: 10vw 10vw 200vw 10vw;
+       grid-template-rows: 10vw 17vw 200vw 10vw;
        grid-template-areas:
        '. header .'
        '. photo .'
@@ -95,15 +95,22 @@
     .photo{
         position: relative;
         margin: auto;
-        height: 20vw;
+        height: 40vw;
         grid-area: photo;
-        img{
-            width: 80vw;
-            margin-bottom: -50vw;
-        }
-        
-       
+             
     }
+
+    .image{
+        margin-top: -9vw;
+        position: relative;
+        
+        width:80vw;
+        height:40vw ;
+        object-fit:cover;
+        transform: translate(0%,0%);
+        z-index: -1;
+    }
+
 
 
     main{
