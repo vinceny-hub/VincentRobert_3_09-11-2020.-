@@ -1,11 +1,11 @@
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1050px) and (max-width: 1280px) {
   body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 80vw 1fr;
         grid-template-columns: 1fr 80vw 1fr;
-    -ms-grid-rows: 10vw 10vw 200vw 0vw;
-        grid-template-rows: 10vw 10vw 200vw 0vw;
+    -ms-grid-rows: 10vw 10vw 200vw 10vw;
+        grid-template-rows: 10vw 10vw 200vw 10vw;
         grid-template-areas: '. header .' '. photo .' '. main .' ' footer footer footer';
   }
   .fade-box {
@@ -102,7 +102,7 @@
     -webkit-transform: translate(3.35vw, 0.55vw);
             transform: translate(3.35vw, 0.55vw);
     z-index: 2;
-    opacity: 0.5;
+    opacity: 0;
   }
   main .heart {
     margin-right: -0vw;

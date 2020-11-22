@@ -1,0 +1,332 @@
+@media only screen and (min-width:1280px){
+
+
+    
+
+    body{
+        display: grid;
+        background-color: white;
+        grid-template-columns: 1fr 75vw 1fr;
+        grid-template-rows: 0vw 37vw 40vw 10vw;
+        grid-template-areas:
+        '. header .'
+        '. photo .'
+        '. main.'
+        ' footer footer footer'
+        ;
+       
+    }
+ 
+    .fade-box{
+    
+     width:400vw;
+     height:150vw;
+     margin-left: -200vw;
+       
+     border-top-left-radius:12vw;
+     border-top-right-radius: 12vw;
+     
+     z-index:5;
+     background:white;
+     animation: anim forwards 3.9s ease-in-out;
+     margin-top: 0vw;
+     transform-origin: bottom;
+     
+     
+     
+ }
+ 
+ @keyframes page-animation-btn{
+     0%{
+       margin-bottom:0vw;
+     }
+     100%{
+       top:0%;
+     }
+ }
+ 
+ 
+ 
+ @keyframes page-animation{
+ 
+     0%{
+         
+      /*height: 311.86vw;*/
+     }
+   
+     100%{
+         margin-top:-35vw;
+        
+     }
+     
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     header{
+      
+      
+         height: 7vw;
+         margin-top: 0vw;
+      
+         grid-area:header;
+         justify-content: center;
+      
+               
+         h1{
+            
+             margin-right: 31vw;
+             font-size: 3.25vw;
+             
+         }
+         .arrow{
+             position: relative;
+             font-size: 3vw;
+             margin-left: 0vw;
+            
+         }
+     }
+ 
+ 
+     .photo{
+         position: relative;
+         margin: auto;
+         height: 27vw;
+         grid-area: photo;
+         margin-left: 0vw;
+        
+         img{
+             width: 75vw;
+           
+            
+         }
+         
+        
+     }
+ 
+ 
+     main{
+      
+      
+        background-color: #F2F2F2;
+        display: grid;
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 30vw 75vw 10vw;
+        grid-template-areas: 
+        '  restaurant restaurant restaurant '
+        ' entrees plats desserts '
+        ' explorer explorer explorer'
+  
+        
+        
+        ;
+ 
+         #select1{
+             position: absolute;
+             scale:(12);
+             margin-top: -7vw;
+             margin-left: -175.5vw;
+             z-index: 2;
+             opacity:0;
+         
+            
+
+
+             
+         }
+
+         
+         #select1:hover ~ .heart2 .fa-heart{
+            
+            opacity: 1; 
+          
+            background-clip:text;
+            background:linear-gradient(to bottom right,#FF79DA,#9356DC);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+            font-size: 9vw;
+            
+          
+            
+            transition: opacity 350ms ease-in-out; 
+            
+        }
+
+         .heart{
+            position: absolute;
+            margin-top: -3.75vw;
+            margin-left: 15vw;
+            font-size: 9vw;
+         }
+        
+         .heart2{
+             position: absolute;
+             margin-top: -3.75vw;
+             margin-left: 34vw;
+             font-size: 9vw;
+
+         }
+         
+       
+         position: relative;
+         width: 100%;
+         height: 75vw;
+         grid-area: main;
+         transform: scale(0.3);
+         
+        
+ 
+ 
+         .titreRestaurant h2{
+             margin-top: -7vw;
+             font-size: 12vw;
+             margin-left:-55vw;
+             
+         }
+         .restaurant{
+             background-color: #F2F2F2;
+             width: 100%;
+             grid-area: restaurant;
+             border-top-left-radius:20vw ;
+             border-top-right-radius:20vw;
+         }
+         .entrees{
+             margin-top: 0vw;
+             grid-area: entrees;
+             height: 75vw;
+             background-color: #F2F2F2;
+             
+            
+         }
+         .plats{
+             background-color: #F2F2F2;
+             height: 75vw;
+             margin-top: 0vw;
+             grid-area: plats;
+         }
+         .desserts{
+            background-color: #F2F2F2;
+            height: 75vw;
+             margin-top: 0vw;
+             grid-area: desserts;
+         }
+         .explorer{
+             grid-area: explorer;
+             .btn-nav{
+                 margin-left:110vw;
+             }
+         }
+ 
+         .entrees h2{
+             font-size: 3vw;
+         }
+         .plats h2{
+             font-size: 3vw;
+         }
+         .desserts h2{
+             font-size: 3vw;
+         }
+         .btn{
+             width: 70vw;
+             height: 15vw;
+             margin-left: 5vw;
+             margin-bottom: 4vw;
+ 
+             .slide:hover > .caption{
+                 width: 40vw;
+                 transition: width 700ms 100ms;
+                 transition-timing-function: ease-in-out;
+     
+             }
+ 
+             .caption{
+                 width: 60vw;
+                 h4{
+                 font-size: 3.25vw;
+             }
+             p{
+                 font-size:3vw;
+             }
+             }
+             .slide-box{
+                 margin-left: -20vw;
+                 .slide-point{
+                    
+                 }
+               p{
+                   padding-top:11.25vw;
+                   font-size: 3vw;
+ 
+               }
+               i{
+                   margin-left: -2vw;
+                   font-size: 5vw;
+               }
+                        
+         }
+             
+           
+         }
+ 
+        
+     }
+ 
+     .explorer{
+         
+     }
+ 
+     footer{
+      
+       
+         grid-area: footer;
+         height: 10vw;
+       
+        
+ 
+ 
+         h3{
+             padding-top: 1vw;
+             width: 90vw;
+             margin: auto;
+             font-family:'Shrikhand';
+             font-size:2vw;
+             margin-bottom: -2vw;
+             
+         }
+ 
+         ul{
+             display:flex;
+             font-size: 1vw;
+             width: 90vw;
+             justify-content: space-evenly;
+             margin-left: -6.25vw;
+             
+         }
+ 
+         li{
+             list-style-type: none;
+             padding-bottom: 0.25vw;
+         }
+        
+         .fa-utensils{
+             position: relative;
+             padding-right: 0.5vw;
+             top:-0.2vw;
+             font-size:1vw;
+         }
+         .fa-hands-helping{
+             position: relative;
+             top: -0.2vw;
+             font-size: 1vw;
+             padding-right: 0.5vw;
+         }
+ 
+     }
+ 
+ }
