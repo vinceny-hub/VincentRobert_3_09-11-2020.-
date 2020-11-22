@@ -111,7 +111,7 @@
         #select1{
             position: absolute;
             scale:(7);
-            transform: translate(3.35vw,0.55vw);
+            margin-left: 50vw;
             z-index: 2;
             opacity:0;
         
@@ -119,7 +119,12 @@
             
         }
         .heart{
-            margin-right: -0vw;
+            position: absolute;
+            margin-left: 50vw;
+        }
+        .heart2{
+            position: absolute;
+            margin-left: 50vw;
         }
         
       

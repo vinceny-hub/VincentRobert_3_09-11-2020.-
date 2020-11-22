@@ -99,13 +99,17 @@
   main #select1 {
     position: absolute;
     scale: 7;
-    -webkit-transform: translate(3.35vw, 0.55vw);
-            transform: translate(3.35vw, 0.55vw);
+    margin-left: 50vw;
     z-index: 2;
     opacity: 0;
   }
   main .heart {
-    margin-right: -0vw;
+    position: absolute;
+    margin-left: 50vw;
+  }
+  main .heart2 {
+    position: absolute;
+    margin-left: 50vw;
   }
   main .titreRestaurant h2 {
     font-size: 4.75vw;

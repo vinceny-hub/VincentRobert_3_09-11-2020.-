@@ -685,7 +685,7 @@ main{
                  
             
             font-size: 6.75vw;
-            
+            margin-left: -10vw;
             padding-bottom: 5vw;
 
            
@@ -693,8 +693,8 @@ main{
 
         .heart{
             
-           
-            margin-left: 5vw;
+            position: absolute;
+            margin-left: 70vw;
             overflow: hidden;
             font-weight: normal;
             font-size: 6.7vw;
@@ -708,8 +708,8 @@ main{
               
                            
                
-                
-                transform: translate(-9.6vw,0vw);
+                position: absolute;
+                margin-left: 70vw;
                 
                 overflow: hidden;
                 font-weight: normal;
@@ -733,8 +733,9 @@ main{
            
             #select1{
                 position: absolute;
-                scale:(4);
-                transform: translate(8vw,0.7vw);
+                scale:(7);
+                margin-left: 70vw;
+                margin-top: 3.5vw;
                 z-index: 2;
                 opacity: 0;
 

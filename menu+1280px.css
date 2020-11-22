@@ -105,8 +105,8 @@
   main #select1 {
     position: absolute;
     scale: 12;
-    margin-top: -7vw;
-    margin-left: -175.5vw;
+    margin-top: 1.5vw;
+    margin-left: 15vw;
     z-index: 2;
     opacity: 0;
   }
@@ -130,7 +130,7 @@
   main .heart2 {
     position: absolute;
     margin-top: -3.75vw;
-    margin-left: 34vw;
+    margin-left: 15vw;
     font-size: 9vw;
   }
   main .titreRestaurant h2 {
