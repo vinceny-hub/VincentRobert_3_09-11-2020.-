@@ -304,11 +304,16 @@ main{
         transition: transform 1000ms ease-in-out, opacity 700ms; 
         border-radius: 10vw;
         
+            cursor: pointer;
+        
+        
+        
     }                  
         .btn-link{
             
             text-decoration: none;
             color:$BtnLinkNav;
+            
         }   
             
         .btn-nav:hover{
@@ -533,7 +538,7 @@ main{
                 height: 19.73vw;
                 align-items: center;
                 overflow: hidden;
-                
+                cursor: pointer;
                
                 
                 margin-bottom: 6.27vw;
@@ -738,7 +743,7 @@ main{
                 margin-top: 3.5vw;
                 z-index: 2;
                 opacity: 0;
-
+                cursor: pointer;
                
                 
             }
@@ -837,6 +842,11 @@ main{
         li{
             list-style-type: none;
             padding-bottom: 2vw;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
        
         .fa-utensils{
