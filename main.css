@@ -37,8 +37,8 @@ body .loader {
   border-radius: 50%;
   width: 15vw;
   height: 15vw;
-  -webkit-animation: spin 3s linear forwards;
-          animation: spin 3s linear forwards;
+  -webkit-animation: spin 2s linear forwards;
+          animation: spin 2s linear forwards;
   margin-left: 42.5vw;
   margin-top: 25%;
   z-index: 4;
@@ -51,10 +51,9 @@ body .fade-box {
   margin-top: -1vw;
   border-top-left-radius: 12vw;
   border-top-right-radius: 12vw;
-  z-index: 3;
   background: white;
-  -webkit-animation: anim forwards 3s ease-in-out 1s;
-          animation: anim forwards 3s ease-in-out 1s;
+  -webkit-animation: anim forwards 3.5s ease-in-out;
+          animation: anim forwards 3.5s ease-in-out;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
@@ -101,35 +100,27 @@ body .fade-box {
 
 @-webkit-keyframes anim {
   0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 1;
-  }
-  90% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    opacity: 0;
+    -webkit-transform: opacity;
+            transform: opacity;
   }
   100% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    opacity: 0;
+    opacity: 1;
+    -webkit-transform: opacity;
+            transform: opacity;
   }
 }
 
 @keyframes anim {
   0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    opacity: 1;
-  }
-  90% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    opacity: 0;
+    -webkit-transform: opacity;
+            transform: opacity;
   }
   100% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    opacity: 0;
+    opacity: 1;
+    -webkit-transform: opacity;
+            transform: opacity;
   }
 }
 

@@ -12,7 +12,7 @@
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: header;
-    margin-left: -10vw;
+    margin-left: -5vw;
     width: 60vw;
     height: 10vw;
   }
@@ -221,18 +221,18 @@
     margin-left: 0vw;
   }
   footer li {
-    padding-left: 9vw;
+    padding-left: 8vw;
     padding-top: 0vw;
   }
   footer .fa-utensils {
     position: absolute;
-    left: 6.5vw;
+    left: 5vw;
     top: 10.5vw;
     font-size: 2.25vw;
   }
   footer .fa-hands-helping {
     position: absolute;
-    left: 30vw;
+    left: 27.5vw;
     top: 10.5vw;
     font-size: 2.25vw;
     padding-right: 2.25vw;

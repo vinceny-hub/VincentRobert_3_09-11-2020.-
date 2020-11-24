@@ -12,7 +12,7 @@
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: header;
-    margin-left: -15vw;
+    margin-left: -10vw;
     width: 60vw;
     height: 7vw;
   }
@@ -75,7 +75,6 @@
   }
   .fonctionnement {
     position: relative;
-    margin-left: 0vw;
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: fonctionnement;
@@ -86,6 +85,7 @@
     font-size: 2vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
+    margin-left: -7.5vw;
   }
   .box {
     display: -webkit-box;
@@ -97,7 +97,7 @@
             flex-direction: row;
   }
   .btn {
-    margin-left: 1vw;
+    margin-left: -7vw;
     width: 20.5vw;
     height: 4.73vw;
     font-size: 1.25vw;
@@ -233,13 +233,13 @@
   }
   footer .fa-utensils {
     position: absolute;
-    left: 7vw;
+    left: 6.75vw;
     top: 6vw;
     font-size: 1.5vw;
   }
   footer .fa-hands-helping {
     position: absolute;
-    left: 28.25vw;
+    left: 28vw;
     top: 6vw;
     font-size: 1.5vw;
   }
