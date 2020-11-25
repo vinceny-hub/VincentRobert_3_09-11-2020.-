@@ -19,8 +19,8 @@
  
     .fade-box{
     
-     width:400vw;
-     height:150vw;
+     width:800vw;
+     height:200vw;
      margin-left: -200vw;
        
      border-top-left-radius:12vw;
@@ -290,7 +290,7 @@
  
      footer{
       
-       
+         z-index: 2;
          grid-area: footer;
          height: 10vw;
        

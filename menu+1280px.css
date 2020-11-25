@@ -10,8 +10,8 @@
         grid-template-areas: '. header .' '. photo .' '. main.' ' footer footer footer';
   }
   .fade-box {
-    width: 400vw;
-    height: 150vw;
+    width: 800vw;
+    height: 200vw;
     margin-left: -200vw;
     border-top-left-radius: 12vw;
     border-top-right-radius: 12vw;
@@ -233,6 +233,7 @@
     font-size: 5vw;
   }
   footer {
+    z-index: 2;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
