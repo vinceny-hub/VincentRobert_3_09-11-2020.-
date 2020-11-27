@@ -1,11 +1,10 @@
-@media only screen and (min-width:769px) and (max-width: 1152px){
+@media only screen and (min-width:768px) and (max-width: 1151px){
 
 body{
     width: 100vw;
     margin: auto;
     display: grid;  
     grid-template-columns: 1fr 90vw 1fr; 
-    
     grid-template-areas:
     ' . header . '
     ' . explorer . '
@@ -20,37 +19,26 @@ body{
 header{
     position: relative;
     grid-area: header;
-    
-    
 }
+
 .explorer{
     position: relative;
     grid-area: explorer;
     height: 60vw;
 
-   
-        
-        
-    
-    
-     
-      h1{
-          margin-top: -7vw;
-          width: 90vw;
-          font-size: 5.25vw;
-      }
+    h1{
+        margin-top: -7vw;
+        width: 90vw;
+        font-size: 5.25vw;
+    }
       
-      .btn-nav{
+    .btn-nav{
         margin-top: -3.5vw;
         scale: (0.75);
-      }
-     
-   
-    
-    
+    }
 }
+
 .fonctionnement{
-    
     position: relative;
     grid-area: fonctionnement;
     width: 90vw;
@@ -59,9 +47,7 @@ header{
     h2{
         font-size: 5vw;
         margin-top: 2vw;
-       
     }
-
 }
 
 .btn {
@@ -74,13 +60,9 @@ header{
     width:67.93vw;
     height: 15.73vw;
     align-items: center;
-   
     padding-left: 8.68vw; 
     margin-bottom: 6.27vw;
     font-size: 3.75vw;
-  
-   
-    
     transition:0.7s ease-in-out 0.07s;
     border-radius: 7vw;
 
@@ -88,7 +70,6 @@ header{
         color: black;
         font-weight: 500;
     }
-
 }
 
 
@@ -108,10 +89,6 @@ main{
         margin-bottom: 5vw;
     }
 
-        
-    
-    
-
     .item{
         width:67.49vw;
         height:42.47vw;
@@ -121,69 +98,51 @@ main{
             margin-left: 45vw;
             margin-top: 2vw;
             transform: scale(0.7);
-                
-             
-            }
+        }
 
-            #select1{
-                position: absolute;
-                scale:(8);
-                margin-left: 57.75vw;
-                margin-top:35.5vw;
-                z-index: 1;
-                opacity: 0;
-                
-            }
+        #select1{
+            position: absolute;
+            scale:(8);
+            margin-left: 57.75vw;
+            margin-top:35.5vw;
+            z-index: 1;
+            opacity: 0;
+        }
 
-            .heart{
-                margin-left: -19.5vw;
-                margin-top: 2.5vw;
-                
-               
-               
-            }
-            .heart2{
-                margin-left: -19.5vw;
-                margin-top: 2.5vw;
-            }
+        .heart{
+            margin-left: -19.5vw;
+            margin-top: 2.5vw;
+        }
+
+        .heart2{
+            margin-left: -19.5vw;
+            margin-top: 2.5vw;
+        }
           
-           
-
-
         img{
             width: 67.49vw;
             height: 42.5vw;
             object-fit: cover;
             transform: translate(0%,-12.5vw);
         }
-       
         
-
         .caption{
-
             transform: translate(-1vw,-15.75vw);
+
             h4{
                 padding-top: 0.75vw;
                 font-size:3.75vw;
-
             }
+
             p{
                 font-size:3.75vw;
                 padding-top: 0.25vw;
             }
-
-       
-
         }
-        
-       
     }
- 
-
-    
 }
+
 footer{
-   
     position: relative;
     grid-area: footer;
     height: 30vw;
@@ -193,28 +152,25 @@ footer{
         padding-top: 3vw;
         padding-bottom: 2vw;
     }
+
     ul{
         display: flex;
         flex-wrap: wrap;
         font-size:3.5vw;
         margin-left:0vw;
-        
     }
+
     li{
         margin-left: 5vw;
         padding-top: 1vw;
-
-        
     }
+
     .mentions{
         margin-left:5vw;
     }
+
     .contact{
         margin-left:20vw;
     }
-   
 }
-
-
-
 }

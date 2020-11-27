@@ -328,9 +328,9 @@ header .arrow {
 
 .btn-nav:hover {
   /* width: 58.29vw; 
-            line-height:13.80vw; 
-            font-size:4.30vw;   
-            box-shadow:1.75vw 1.75vw 2vw #7d7d7d;*/
+    line-height:13.80vw; 
+    font-size:4.30vw;   
+    box-shadow:1.75vw 1.75vw 2vw #7d7d7d;*/
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   opacity: 0.7;
@@ -410,7 +410,7 @@ header .arrow {
            background: none;
            width: 85vw;
            height: 19.73vw;
-       }*/
+    }*/
 .slide {
   position: absolute;
   width: 92.93vw;
@@ -559,11 +559,11 @@ section .titreMenu {
   transition: 0.7s ease-in-out 0.07s;
   border-radius: 3.5vw;
   /*  i{
-                    
-                    font-size: 6.25vw;
-                    padding-right: 6.27vw;
-                    color: $iconBtnLink;
-                  }*/
+        
+        font-size: 6.25vw;
+        padding-right: 6.27vw;
+        color: $iconBtnLink;
+        }*/
 }
 
 .btn .slide:hover > .caption {
@@ -828,4 +828,4 @@ footer .fa-hands-helping {
   font-size: 3vw;
   padding-right: 2.25vw;
 }
-/*# sourceMappingURL=noteenchantee.css.map */
+/*# sourceMappingURL=menu.css.map */

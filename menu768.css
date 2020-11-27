@@ -1,18 +1,16 @@
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   body {
     display: -ms-grid;
     display: grid;
-    background-color: white;
-    -ms-grid-columns: 1fr 75vw 1fr;
-        grid-template-columns: 1fr 75vw 1fr;
-    -ms-grid-rows: 7vw 30vw 40vw 10vw;
-        grid-template-rows: 7vw 30vw 40vw 10vw;
-        grid-template-areas: '. header .' '. photo .' '. main.' ' footer footer footer';
+    -ms-grid-columns: 1fr 80vw 1fr;
+        grid-template-columns: 1fr 80vw 1fr;
+    -ms-grid-rows: 10vw 17vw 200vw 10vw;
+        grid-template-rows: 10vw 17vw 200vw 10vw;
+        grid-template-areas: '. header .' '. photo .' '. main .' ' footer footer footer';
   }
   .fade-box {
-    width: 800vw;
-    height: 200vw;
-    margin-left: -200vw;
+    width: 100%;
+    height: 270vw;
     border-top-left-radius: 12vw;
     border-top-right-radius: 12vw;
     z-index: 5;
@@ -66,28 +64,28 @@
             justify-content: center;
   }
   header h1 {
-    margin-right: 31vw;
-    font-size: 3.25vw;
+    margin-right: 29vw;
+    font-size: 5vw;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   header .arrow {
     position: relative;
-    font-size: 3vw;
+    font-size: 4vw;
     margin-left: 0vw;
   }
   .photo {
     position: relative;
     margin: auto;
     height: 40vw;
-    width: 75vw;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: photo;
-    margin-left: 0vw;
   }
   .image {
     margin-top: -9vw;
     position: relative;
-    width: 75vw;
+    width: 80vw;
     height: 40vw;
     -o-object-fit: cover;
        object-fit: cover;
@@ -96,99 +94,32 @@
     z-index: -1;
   }
   main {
-    background-color: #F2F2F2;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 30vw 75vw 10vw;
-        grid-template-rows: 30vw 75vw 10vw;
-        grid-template-areas: '  restaurant restaurant restaurant ' ' entrees plats desserts ' ' explorer explorer explorer';
     position: relative;
-    width: 100%;
-    height: 75vw;
+    width: 80vw;
+    height: 270vw;
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: main;
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   main #select1 {
     position: absolute;
-    scale: 12;
-    margin-top: 1.5vw;
-    margin-left: 15vw;
+    scale: 7;
+    margin-left: 50vw;
     z-index: 2;
     opacity: 0;
   }
-  main #select1:hover ~ .heart2 .fa-heart {
-    opacity: 1;
-    background-clip: text;
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 9vw;
-    -webkit-transition: opacity 350ms ease-in-out;
-    transition: opacity 350ms ease-in-out;
-  }
   main .heart {
     position: absolute;
-    margin-top: -3.75vw;
-    margin-left: 15vw;
-    font-size: 9vw;
+    margin-left: 50vw;
   }
   main .heart2 {
     position: absolute;
-    margin-top: -3.75vw;
-    margin-left: 15vw;
-    font-size: 9vw;
+    margin-left: 50vw;
   }
   main .titreRestaurant h2 {
-    margin-top: -7vw;
-    font-size: 12vw;
-    margin-left: -55vw;
-  }
-  main .restaurant {
-    background-color: #F2F2F2;
-    width: 100%;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: restaurant;
-    border-top-left-radius: 20vw;
-    border-top-right-radius: 20vw;
-  }
-  main .entrees {
-    margin-top: 0vw;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: entrees;
-    height: 75vw;
-    background-color: #F2F2F2;
-  }
-  main .plats {
-    background-color: #F2F2F2;
-    height: 75vw;
-    margin-top: 0vw;
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: plats;
-  }
-  main .desserts {
-    background-color: #F2F2F2;
-    height: 75vw;
-    margin-top: 0vw;
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: desserts;
-  }
-  main .explorer {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: explorer;
-  }
-  main .explorer .btn-nav {
-    margin-left: 110vw;
+    font-size: 4.75vw;
   }
   main .entrees h2 {
     font-size: 3vw;
@@ -238,42 +169,41 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: footer;
-    height: 10vw;
+    height: 20vw;
+    margin-bottom: -100vw;
   }
   footer h3 {
-    padding-top: 1vw;
+    padding-top: 3vw;
     width: 90vw;
     margin: auto;
     font-family: 'Shrikhand';
-    font-size: 2vw;
-    margin-bottom: -2vw;
+    font-size: 3vw;
   }
   footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1vw;
+    font-size: 2vw;
     width: 90vw;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-left: -6.25vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   footer li {
     list-style-type: none;
-    padding-bottom: 0.25vw;
+    padding-bottom: 2vw;
   }
   footer .fa-utensils {
     position: relative;
     padding-right: 0.5vw;
     top: -0.2vw;
-    font-size: 1vw;
+    font-size: 2vw;
   }
   footer .fa-hands-helping {
     position: relative;
     top: -0.2vw;
-    font-size: 1vw;
+    font-size: 2vw;
     padding-right: 0.5vw;
   }
 }
-/*# sourceMappingURL=menu+1280px.css.map */
+/*# sourceMappingURL=menu768.css.map */

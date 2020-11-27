@@ -28,7 +28,7 @@ body .loader {
   /* Light grey */
   border-top: 1.75vw solid #FF79DA;
   /* Blue */
-  /*    background:linear-gradient(to bottom right,#FF79DA,#9356DC);*/
+  /*background:linear-gradient(to bottom right,#FF79DA,#9356DC);*/
   border-radius: 50%;
   width: 15vw;
   height: 15vw;
@@ -171,9 +171,9 @@ les titres et le bouton "explorer nos restaurants*/
 
 .btn-nav:hover {
   /* width: 58.29vw; 
-   line-height:13.80vw; 
-   font-size:4.30vw;   
-   box-shadow:1.75vw 1.75vw 2vw #7d7d7d;*/
+  line-height:13.80vw; 
+  font-size:4.30vw;   
+  box-shadow:1.75vw 1.75vw 2vw #7d7d7d;*/
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   opacity: 0.7;
   transform: scale(1.2);
@@ -302,11 +302,11 @@ main h2 {
   scale: 1.025;
   transition: opacity 200ms, scale 500ms ease-in-out;
   /*&:hover{
-      scale:1;
-      opacity: 0;
-      z-index: 1;
-      transition: all 100ms ease-in-out; 
-  }*/
+        scale:1;
+        opacity: 0;
+        z-index: 1;
+        transition: all 100ms ease-in-out; 
+    }*/
 }
 .item .heart2 .fa-heart:active {
   scale: 1.05;

@@ -1,0 +1,259 @@
+@media only screen and (min-width:1408px) {
+    
+body{
+    display: grid;  
+    grid-template-columns: 1fr 90vw 1fr; 
+    grid-template-rows: 12vw 15vw 15vw 42.5vw 10vw;
+    grid-template-areas:
+    ' . header . '
+    ' . explorer  .'
+    ' . fonctionnement .'
+    ' . main . '
+    ' footer footer footer '
+    ;
+}
+    
+header{
+    grid-area: header;
+    margin-left:-10vw;
+    width: 60vw;
+    height: 7vw;
+
+    .logo{
+        width: 30vw;
+        height: 5vw;
+    }
+    
+    
+}
+    
+.explorer{
+    position: relative;
+    grid-area: explorer;
+    width: 90vw;
+    height: 15vw;
+    margin: auto;
+    background-color: white;
+
+    .recherche{
+        height: 4.63vw;
+        width: 30vw;
+        margin-left:0vw;
+        margin-bottom: 10.09vw;
+
+        input{
+            position: absolute;
+            height: 4.63vw;
+            font-size: 1.7vw;
+            margin-left: -9vw;
+        }
+
+        .fa-map-marker-alt {
+            position: absolute;
+            margin-left: -17vw;
+            line-height: 4.63vw;
+            width: 10vw;
+            font-size: 3vw;
+        }
+        
+    }
+         
+    h1{
+        margin-left:-24.25vw;
+        margin-top: -7vw;
+        width: 90vw;
+        font-size: 2.5vw;
+    }
+
+    p{
+        margin-left: -19.5vw;
+        margin-top: -2vw;
+        font-size: 1.7vw;
+    }
+
+    .btn-nav{
+        position: absolute;
+        width: 10.5vw;
+        height: 10.5vw;
+        margin-top: -17vw;
+        margin-left: 10vw;
+        font-size: 1.5vw;
+        line-height: 2vw;
+    }
+
+    .btn-nav:hover {
+        transform: scale(1.1);
+    }
+}
+    
+.fonctionnement{
+    position: relative;
+    grid-area: fonctionnement;
+    width: 75vw;
+    height:20vw;
+
+    h2{
+        font-size: 2vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        margin-left: -7.5vw;
+    }
+}
+
+.box{
+    display:flex;
+    flex-direction:row;
+}
+    
+.btn {
+    margin-left:-7vw;
+    width:20.5vw;
+    height: 4.73vw;
+    font-size: 1.25vw;
+    
+    .btn-link{
+        color: black;
+        font-weight: 500;
+    }
+
+    i{
+        font-size: 2vw;
+        padding-right: 1.5vw;
+        margin-left: -6vw;
+    }
+
+    &:hover{
+        background-color : #ede2fa;
+        i{
+            color: #9356dc;
+        }
+    }
+}
+
+.chiffre{
+    position: absolute;
+    font-family:'roboto';
+    justify-content: center;
+    color: white;
+    width:3vw;
+    height:3vw;
+    line-height: 3vw;
+    background-color: #9356dc;
+    border-radius:50%;
+    margin-left:-10vw;
+} 
+    
+    
+main{
+    grid-area: main;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin: auto;
+    width: 90vw;
+    height: 42.5vw;
+    justify-content: space-around;
+
+    h2{
+        margin-top:-10vw;
+        margin-left:0vw;
+        margin-bottom: 2.5vw;
+        font-size: 2vw;
+    }
+
+    .item{
+        width:42vw;
+        height:12.5vw;
+        margin-bottom: 5vw;
+        border-radius: 0.7vw;
+        border: 0.25vw solid white;
+        
+        .nouveau{
+            margin-left: 27vw;
+            margin-top: -2vw;
+            transform: scale(0.25);
+            }
+
+        #select1{
+            position: absolute;
+            scale:(4);
+            margin-left: 37.95vw;
+            margin-top:8.5vw;
+            z-index: 1;
+            opacity:0;
+        }
+
+        .heart{
+            margin-left: -56vw;
+            margin-top:13.7vw;
+            font-size: 3vw;
+        }
+
+        .heart2{
+            margin-left: -55.79vw;
+            margin-top:13.4vw;
+
+            .fa-heart{
+                font-size: 3vw;
+            }
+        }
+            
+        img{
+            width:19.49vw;
+            height:16vw;
+            object-fit: cover;
+            transform: translate(0vw,-3vw);
+            border-radius:unset;                
+        }
+            
+        .caption{
+                transform: translate(17.5vw,-19.5vw);
+            h4{
+                padding-top: 0.75vw;
+                font-size:1.5vw;
+            }
+
+            p{
+                font-size:1.5vw;
+                padding-top: 0.5vw;
+            }
+        }
+    }
+}
+
+footer{
+    height: 10vw;
+    position: relative;
+    grid-area: footer;
+        
+    h3{
+        font-size:2.25vw;
+        padding-top: 1vw;
+        padding-bottom: 2vw;
+        margin-left:6.5vw;
+    }
+
+    ul{
+        display: inline-flex;
+        font-size:1.25vw;
+    }
+
+    li{
+        padding-left: 9vw;
+        padding-top: 0vw;
+    }
+
+    .fa-utensils{
+        position: absolute;
+        left:6.75vw;
+        top:6vw;
+        font-size: 1.5vw;
+    }
+
+    .fa-hands-helping{
+        position: absolute;
+        left: 28vw;
+        top:6vw;
+        font-size: 1.5vw;
+    }
+}
+}
