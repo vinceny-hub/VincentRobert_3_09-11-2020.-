@@ -70,9 +70,22 @@ header{
         width: 12.5vw;
         height: 12.5vw;
         margin-top: -19vw;
-        margin-left: 20vw;
+        margin-left: 65vw;
         font-size: 1.75vw;
-        line-height: 2vw;
+        
+       
+
+        p{
+            position: relative;
+            margin-top: 4vw;
+            margin-left: 0vw;
+            width: 12.5vw;
+            height: 2.5vw;
+            line-height: 2.2vw;
+            font-size: 1.75vw;
+          
+        }
+       
     }
 
     .btn-nav:hover {
@@ -167,6 +180,30 @@ main{
                 }
 
             #select1{
+                position: absolute;
+                scale:(5);
+                margin-left: 35.7vw;
+                margin-top:20.1vw;
+                z-index: 1;
+                opacity:0;
+            }
+            #select2{
+                position: absolute;
+                scale:(5);
+                margin-left: 35.7vw;
+                margin-top:20.1vw;
+                z-index: 1;
+                opacity:0;
+            }
+            #select3{
+                position: absolute;
+                scale:(5);
+                margin-left: 35.7vw;
+                margin-top:20.1vw;
+                z-index: 1;
+                opacity:0;
+            }
+            #select4{
                 position: absolute;
                 scale:(5);
                 margin-left: 35.7vw;

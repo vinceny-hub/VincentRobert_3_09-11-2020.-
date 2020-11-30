@@ -160,8 +160,12 @@
     font-size: 3vw;
   }
   main .btn .slide-box i {
-    margin-left: -2vw;
+    margin-left: 4vw;
+    line-height: 20vw;
     font-size: 5vw;
+  }
+  .explorer {
+    padding-top: 10vw;
   }
   footer {
     z-index: 2;

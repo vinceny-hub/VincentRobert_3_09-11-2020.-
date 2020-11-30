@@ -173,9 +173,7 @@ main{
         .explorer{
             grid-area: explorer;
 
-                .btn-nav{
-                margin-left:110vw;
-                }
+               
         }
 
         .entrees h2{
@@ -223,11 +221,16 @@ main{
             }
 
             i{
-                margin-left: -2vw;
+                margin-left: 4vw;
+                line-height: 20vw;
                 font-size: 5vw;
             }
         }
     }
+}
+
+.explorer{
+    padding-top: 10vw;
 }
  
     

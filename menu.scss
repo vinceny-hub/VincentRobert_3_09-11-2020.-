@@ -249,23 +249,29 @@ header{
     /*fin des titres*/
 
     /* Bouton principal d'exploration et de commande*/
-.btn-nav{
+    .btn-nav{
+  
     
-    border: none;
-    margin: auto;
-    width: 57.79vw;
-    height: 13.3vw;
-    font-size: 4.25vw;
-    box-shadow:0.5vw 0.5vw 1.25vw $boxShadowNavBtn;
-    background: $btnGrdBckColor;
-    /*transition:0.7s ease-in-out;*/
-    transition: transform 1000ms ease-in-out, opacity 700ms; 
-    border-radius: 10vw;
-    cursor: pointer;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 57.79vw;
+        line-height:13.30vw;
+        font-size: 4.25vw;
+        box-shadow:0.5vw 0.5vw 1.25vw $boxShadowNavBtn;
+        background: $btnGrdBckColor;
+        /*transition:0.7s ease-in-out;*/
+        transition: transform 1000ms ease-in-out, opacity 700ms; 
+        border-radius: 10vw;
+        cursor: pointer;
+        text-decoration: none;
+        color:$BtnLinkNav;
+    }  
     
+   
     
-    
-}   
+   
 
 .btn-link{
     text-decoration: none;
@@ -309,7 +315,7 @@ header{
     line-height: 20vw;
     transition: transform 1500ms;
     transition-timing-function: ease-in-out;
-    justify-content: center;
+    
     background-color: #99e2d0;
 }
        
@@ -355,11 +361,14 @@ header{
 
 .check-move{
     height: 20vw;
-    align-content: center;
-    justify-content: center;
+    i{
+        line-height:20vw;
+    }
+   
 }
 
 .check-move .fa-check-circle{
+    margin-left: 5vw;
     position: relative;
     rotate: (0deg);
     transform-origin: 50% 50%;

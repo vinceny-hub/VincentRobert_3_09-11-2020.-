@@ -121,6 +121,8 @@ header{
     height: 89.90vw;
     background-color:$mainBckColor;
     text-align: center;
+   
+   
 } 
 /* boite de recherche */
 .recherche{
@@ -173,8 +175,12 @@ header{
     /* Bouton principal d'exploration et de commande*/
     
 .btn-nav{
+  
+    
     border: none;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
     width: 57.79vw;
     line-height:13.30vw;
     font-size: 4.25vw;
@@ -184,6 +190,8 @@ header{
     transition: transform 1000ms ease-in-out, opacity 700ms; 
     border-radius: 10vw;
     cursor: pointer;
+    text-decoration: none;
+    color:$BtnLinkNav;
 } 
 
 .btn-link{
@@ -376,6 +384,73 @@ main{
     #select1:checked ~ .lien .fa-heart{
         animation: anim-heart 0.5s both;
     }
+
+    #select2{
+        position: absolute;
+        scale:(9.1);
+        margin-left: 78.75vw;
+        margin-top:55.5vw;
+        z-index: 1;
+        opacity: 0;
+        cursor: pointer;
+        
+    }
+
+    #select2:checked ~ .lien .fa-heart{
+        background-clip:text;
+        background:linear-gradient(to bottom right,#fd48ca,#7423d6);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1; 
+    }
+
+    #select2:checked ~ .lien .fa-heart{
+        animation: anim-heart 0.5s both;
+    }
+    #select3{
+        position: absolute;
+        scale:(9.1);
+        margin-left: 78.75vw;
+        margin-top:55.5vw;
+        z-index: 1;
+        opacity: 0;
+        cursor: pointer;
+        
+    }
+
+    #select3:checked ~ .lien .fa-heart{
+        background-clip:text;
+        background:linear-gradient(to bottom right,#fd48ca,#7423d6);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1; 
+    }
+
+    #select3:checked ~ .lien .fa-heart{
+        animation: anim-heart 0.5s both;
+    }
+    #select4{
+        position: absolute;
+        scale:(9.1);
+        margin-left: 78.75vw;
+        margin-top:55.5vw;
+        z-index: 1;
+        opacity: 0;
+        cursor: pointer;
+        
+    }
+
+    #select4:checked ~ .lien .fa-heart{
+        background-clip:text;
+        background:linear-gradient(to bottom right,#fd48ca,#7423d6);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1; 
+    }
+
+    #select4:checked ~ .lien .fa-heart{
+        animation: anim-heart 0.5s both;
+    }
             
 
     @keyframes anim-heart {
@@ -392,6 +467,18 @@ main{
     }
             
     #select1:hover ~ .lien .fa-heart{
+        opacity: 1; 
+        transition: opacity 200ms, scale 500ms ease-in-out; 
+    }
+    #select2:hover ~ .lien .fa-heart{
+        opacity: 1; 
+        transition: opacity 200ms, scale 500ms ease-in-out; 
+    }
+    #select3:hover ~ .lien .fa-heart{
+        opacity: 1; 
+        transition: opacity 200ms, scale 500ms ease-in-out; 
+    }
+    #select4:hover ~ .lien .fa-heart{
         opacity: 1; 
         transition: opacity 200ms, scale 500ms ease-in-out; 
     }

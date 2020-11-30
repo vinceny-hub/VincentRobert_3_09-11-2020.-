@@ -304,9 +304,11 @@ header .arrow {
 /* Bouton principal d'exploration et de commande*/
 .btn-nav {
   border: none;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   width: 57.79vw;
-  height: 13.3vw;
+  line-height: 13.30vw;
   font-size: 4.25vw;
   -webkit-box-shadow: 0.5vw 0.5vw 1.25vw #7d7d7d;
           box-shadow: 0.5vw 0.5vw 1.25vw #7d7d7d;
@@ -319,6 +321,8 @@ header .arrow {
   transition: transform 1000ms ease-in-out, opacity 700ms, -webkit-transform 1000ms ease-in-out;
   border-radius: 10vw;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .btn-link {
@@ -376,9 +380,6 @@ header .arrow {
   transition: transform 1500ms, -webkit-transform 1500ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #99e2d0;
 }
 
@@ -446,14 +447,14 @@ header .arrow {
 
 .check-move {
   height: 20vw;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.check-move i {
+  line-height: 20vw;
 }
 
 .check-move .fa-check-circle {
+  margin-left: 5vw;
   position: relative;
   rotate: 0deg;
   -webkit-transform-origin: 50% 50%;

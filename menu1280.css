@@ -187,9 +187,6 @@
     -ms-grid-column-span: 3;
     grid-area: explorer;
   }
-  main .explorer .btn-nav {
-    margin-left: 110vw;
-  }
   main .entrees h2 {
     font-size: 3vw;
   }
@@ -229,8 +226,12 @@
     font-size: 3vw;
   }
   main .btn .slide-box i {
-    margin-left: -2vw;
+    margin-left: 4vw;
+    line-height: 20vw;
     font-size: 5vw;
+  }
+  .explorer {
+    padding-top: 10vw;
   }
   footer {
     z-index: 2;

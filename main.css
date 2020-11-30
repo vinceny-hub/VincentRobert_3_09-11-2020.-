@@ -204,7 +204,8 @@ header .logo {
 /* Bouton principal d'exploration et de commande*/
 .btn-nav {
   border: none;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 57.79vw;
   line-height: 13.30vw;
   font-size: 4.25vw;
@@ -219,6 +220,8 @@ header .logo {
   transition: transform 1000ms ease-in-out, opacity 700ms, -webkit-transform 1000ms ease-in-out;
   border-radius: 10vw;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .btn-link {
@@ -440,6 +443,78 @@ main h2 {
           animation: anim-heart 0.5s both;
 }
 
+.item #select2 {
+  position: absolute;
+  scale: 9.1;
+  margin-left: 78.75vw;
+  margin-top: 55.5vw;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.item #select2:checked ~ .lien .fa-heart {
+  background-clip: text;
+  background: -webkit-gradient(linear, left top, right bottom, from(#fd48ca), to(#7423d6));
+  background: linear-gradient(to bottom right, #fd48ca, #7423d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+
+.item #select2:checked ~ .lien .fa-heart {
+  -webkit-animation: anim-heart 0.5s both;
+          animation: anim-heart 0.5s both;
+}
+
+.item #select3 {
+  position: absolute;
+  scale: 9.1;
+  margin-left: 78.75vw;
+  margin-top: 55.5vw;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.item #select3:checked ~ .lien .fa-heart {
+  background-clip: text;
+  background: -webkit-gradient(linear, left top, right bottom, from(#fd48ca), to(#7423d6));
+  background: linear-gradient(to bottom right, #fd48ca, #7423d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+
+.item #select3:checked ~ .lien .fa-heart {
+  -webkit-animation: anim-heart 0.5s both;
+          animation: anim-heart 0.5s both;
+}
+
+.item #select4 {
+  position: absolute;
+  scale: 9.1;
+  margin-left: 78.75vw;
+  margin-top: 55.5vw;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.item #select4:checked ~ .lien .fa-heart {
+  background-clip: text;
+  background: -webkit-gradient(linear, left top, right bottom, from(#fd48ca), to(#7423d6));
+  background: linear-gradient(to bottom right, #fd48ca, #7423d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+
+.item #select4:checked ~ .lien .fa-heart {
+  -webkit-animation: anim-heart 0.5s both;
+          animation: anim-heart 0.5s both;
+}
+
 @-webkit-keyframes anim-heart {
   from {
     scale: 0.7;
@@ -465,6 +540,24 @@ main h2 {
 }
 
 .item #select1:hover ~ .lien .fa-heart {
+  opacity: 1;
+  -webkit-transition: opacity 200ms, scale 500ms ease-in-out;
+  transition: opacity 200ms, scale 500ms ease-in-out;
+}
+
+.item #select2:hover ~ .lien .fa-heart {
+  opacity: 1;
+  -webkit-transition: opacity 200ms, scale 500ms ease-in-out;
+  transition: opacity 200ms, scale 500ms ease-in-out;
+}
+
+.item #select3:hover ~ .lien .fa-heart {
+  opacity: 1;
+  -webkit-transition: opacity 200ms, scale 500ms ease-in-out;
+  transition: opacity 200ms, scale 500ms ease-in-out;
+}
+
+.item #select4:hover ~ .lien .fa-heart {
   opacity: 1;
   -webkit-transition: opacity 200ms, scale 500ms ease-in-out;
   transition: opacity 200ms, scale 500ms ease-in-out;

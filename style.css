@@ -145,7 +145,8 @@ les titres et le bouton "explorer nos restaurants*/
 /* Bouton principal d'exploration et de commande*/
 .btn-nav {
   border: none;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 57.79vw;
   line-height: 13.3vw;
   font-size: 4.25vw;
@@ -155,6 +156,8 @@ les titres et le bouton "explorer nos restaurants*/
   transition: transform 1000ms ease-in-out, opacity 700ms;
   border-radius: 10vw;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .btn-link {
@@ -331,6 +334,63 @@ main h2 {
 .item #select1:checked ~ .lien .fa-heart {
   animation: anim-heart 0.5s both;
 }
+.item #select2 {
+  position: absolute;
+  scale: 9.1;
+  margin-left: 78.75vw;
+  margin-top: 55.5vw;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+.item #select2:checked ~ .lien .fa-heart {
+  background-clip: text;
+  background: linear-gradient(to bottom right, #fd48ca, #7423d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+.item #select2:checked ~ .lien .fa-heart {
+  animation: anim-heart 0.5s both;
+}
+.item #select3 {
+  position: absolute;
+  scale: 9.1;
+  margin-left: 78.75vw;
+  margin-top: 55.5vw;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+.item #select3:checked ~ .lien .fa-heart {
+  background-clip: text;
+  background: linear-gradient(to bottom right, #fd48ca, #7423d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+.item #select3:checked ~ .lien .fa-heart {
+  animation: anim-heart 0.5s both;
+}
+.item #select4 {
+  position: absolute;
+  scale: 9.1;
+  margin-left: 78.75vw;
+  margin-top: 55.5vw;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+.item #select4:checked ~ .lien .fa-heart {
+  background-clip: text;
+  background: linear-gradient(to bottom right, #fd48ca, #7423d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+.item #select4:checked ~ .lien .fa-heart {
+  animation: anim-heart 0.5s both;
+}
 @keyframes anim-heart {
   from {
     scale: 0.7;
@@ -343,6 +403,18 @@ main h2 {
   }
 }
 .item #select1:hover ~ .lien .fa-heart {
+  opacity: 1;
+  transition: opacity 200ms, scale 500ms ease-in-out;
+}
+.item #select2:hover ~ .lien .fa-heart {
+  opacity: 1;
+  transition: opacity 200ms, scale 500ms ease-in-out;
+}
+.item #select3:hover ~ .lien .fa-heart {
+  opacity: 1;
+  transition: opacity 200ms, scale 500ms ease-in-out;
+}
+.item #select4:hover ~ .lien .fa-heart {
   opacity: 1;
   transition: opacity 200ms, scale 500ms ease-in-out;
 }

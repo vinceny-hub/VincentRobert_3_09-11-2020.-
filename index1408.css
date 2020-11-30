@@ -62,12 +62,19 @@
   }
   .explorer .btn-nav {
     position: absolute;
-    width: 10.5vw;
-    height: 10.5vw;
-    margin-top: -17vw;
-    margin-left: 10vw;
-    font-size: 1.5vw;
-    line-height: 2vw;
+    width: 12.5vw;
+    height: 12.5vw;
+    margin-top: -18.25vw;
+    margin-left: 60vw;
+    font-size: 1.75vw;
+  }
+  .explorer .btn-nav p {
+    position: relative;
+    margin-top: 4vw;
+    margin-left: 0vw;
+    width: 12.5vw;
+    height: 2.5vw;
+    line-height: 2.2vw;
   }
   .explorer .btn-nav:hover {
     -webkit-transform: scale(1.1);
@@ -167,6 +174,30 @@
             transform: scale(0.25);
   }
   main .item #select1 {
+    position: absolute;
+    scale: 4;
+    margin-left: 37.95vw;
+    margin-top: 8.5vw;
+    z-index: 1;
+    opacity: 0;
+  }
+  main .item #select2 {
+    position: absolute;
+    scale: 4;
+    margin-left: 37.95vw;
+    margin-top: 8.5vw;
+    z-index: 1;
+    opacity: 0;
+  }
+  main .item #select3 {
+    position: absolute;
+    scale: 4;
+    margin-left: 37.95vw;
+    margin-top: 8.5vw;
+    z-index: 1;
+    opacity: 0;
+  }
+  main .item #select4 {
     position: absolute;
     scale: 4;
     margin-left: 37.95vw;
