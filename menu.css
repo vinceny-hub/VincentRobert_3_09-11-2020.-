@@ -240,6 +240,7 @@ header .arrow {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #F2F2F2;
+  padding-top: 10vw;
 }
 
 /* boite de recherche */

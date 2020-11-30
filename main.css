@@ -421,9 +421,10 @@ main h2 {
 
 .item #select1 {
   position: absolute;
-  scale: 9.1;
-  margin-left: 78.75vw;
-  margin-top: 55.5vw;
+  width: 10vw;
+  height: 10vw;
+  margin-left: 73.75vw;
+  margin-top: 50.5vw;
   z-index: 1;
   opacity: 0;
   cursor: pointer;
@@ -445,9 +446,10 @@ main h2 {
 
 .item #select2 {
   position: absolute;
-  scale: 9.1;
-  margin-left: 78.75vw;
-  margin-top: 55.5vw;
+  width: 10vw;
+  height: 10vw;
+  margin-left: 73.75vw;
+  margin-top: 50.5vw;
   z-index: 1;
   opacity: 0;
   cursor: pointer;
@@ -469,9 +471,10 @@ main h2 {
 
 .item #select3 {
   position: absolute;
-  scale: 9.1;
-  margin-left: 78.75vw;
-  margin-top: 55.5vw;
+  width: 10vw;
+  height: 10vw;
+  margin-left: 73.75vw;
+  margin-top: 50.5vw;
   z-index: 1;
   opacity: 0;
   cursor: pointer;
@@ -493,9 +496,10 @@ main h2 {
 
 .item #select4 {
   position: absolute;
-  scale: 9.1;
-  margin-left: 78.75vw;
-  margin-top: 55.5vw;
+  width: 10vw;
+  height: 10vw;
+  margin-left: 73.75vw;
+  margin-top: 50.5vw;
   z-index: 1;
   opacity: 0;
   cursor: pointer;

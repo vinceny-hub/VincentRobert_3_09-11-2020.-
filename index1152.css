@@ -170,33 +170,37 @@
   }
   main .item #select1 {
     position: absolute;
-    scale: 5;
-    margin-left: 35.7vw;
-    margin-top: 20.1vw;
+    width: 5vw;
+    height: 5vw;
+    margin-left: 33.75vw;
+    margin-top: 18.25vw;
     z-index: 1;
     opacity: 0;
   }
   main .item #select2 {
     position: absolute;
-    scale: 5;
-    margin-left: 35.7vw;
-    margin-top: 20.1vw;
+    width: 5vw;
+    height: 5vw;
+    margin-left: 33.75vw;
+    margin-top: 18.25vw;
     z-index: 1;
     opacity: 0;
   }
   main .item #select3 {
     position: absolute;
-    scale: 5;
-    margin-left: 35.7vw;
-    margin-top: 20.1vw;
+    width: 5vw;
+    height: 5vw;
+    margin-left: 33.75vw;
+    margin-top: 18.25vw;
     z-index: 1;
     opacity: 0;
   }
   main .item #select4 {
     position: absolute;
-    scale: 5;
-    margin-left: 35.7vw;
-    margin-top: 20.1vw;
+    width: 5vw;
+    height: 5vw;
+    margin-left: 33.75vw;
+    margin-top: 18.25vw;
     z-index: 1;
     opacity: 0;
   }
